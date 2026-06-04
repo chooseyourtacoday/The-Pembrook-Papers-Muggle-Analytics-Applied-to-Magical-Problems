@@ -1,0 +1,501 @@
+Potion,Brewer_Level,Temperature_C,Stir_Direction,Stir_Count,Moon_Phase,Ingredient_Quality,Brewing_Time_Hr,Success_Probability,Success
+Draught of Living Death,NEWT,94.4,Alternating,10,Waxing,Standard,258.6,0.598,1
+Wiggenweld Potion,Student,82.2,Clockwise,3,New,Good,226.1,0.491,1
+Veritaserum,Auror,83.3,Clockwise,7,Waxing,Good,160.5,0.847,1
+Strengthening Solution,Auror,113.6,Clockwise,17,Full,Good,718.8,0.772,0
+Veritaserum,Student,95.5,Alternating,8,Waxing,Standard,94.1,0.422,1
+Amortentia,Master,113.0,Counter-clockwise,10,Waning,Standard,582.3,0.805,1
+Amortentia,Auror,81.8,Counter-clockwise,15,New,Exceptional,420.8,0.889,1
+Felix Felicis,NEWT,114.0,Alternating,12,Waxing,Good,129.4,0.58,1
+Draught of Living Death,NEWT,116.1,Clockwise,5,Waxing,Good,453.2,0.569,0
+Wiggenweld Potion,Student,64.0,Alternating,18,New,Good,427.6,0.4,0
+Wiggenweld Potion,Student,116.0,Counter-clockwise,19,Waxing,Exceptional,497.1,0.5,0
+Felix Felicis,NEWT,118.1,Clockwise,14,New,Good,668.8,0.609,1
+Draught of Living Death,Student,62.0,Clockwise,20,New,Standard,43.4,0.31,0
+Pepper-Up Potion,Auror,65.0,Counter-clockwise,10,New,Standard,100.3,0.625,1
+Wiggenweld Potion,Auror,117.3,Alternating,8,Waning,Exceptional,229.0,0.793,0
+Polyjuice Potion,Auror,108.5,Clockwise,19,New,Standard,247.3,0.657,1
+Pepper-Up Potion,NEWT,65.2,Counter-clockwise,12,New,Good,393.5,0.576,0
+Pepper-Up Potion,Student,78.2,Clockwise,13,Waxing,Good,361.5,0.471,0
+Polyjuice Potion,Student,62.2,Counter-clockwise,7,Full,Standard,118.3,0.421,0
+Polyjuice Potion,Auror,76.9,Clockwise,3,Full,Standard,480.9,0.744,1
+Wiggenweld Potion,NEWT,105.8,Alternating,3,Waxing,Good,549.7,0.621,0
+Polyjuice Potion,NEWT,104.1,Counter-clockwise,16,Full,Exceptional,71.5,0.789,1
+Felix Felicis,NEWT,114.3,Alternating,10,Waxing,Poor,363.9,0.348,0
+Wolfsbane Potion,Auror,65.9,Counter-clockwise,21,Full,Standard,91.3,0.689,0
+Polyjuice Potion,Student,66.3,Counter-clockwise,7,Waxing,Standard,589.7,0.382,0
+Strengthening Solution,Master,111.7,Counter-clockwise,4,Waning,Exceptional,266.7,0.98,0
+Wiggenweld Potion,Student,114.5,Clockwise,20,Waxing,Standard,276.2,0.327,1
+Wiggenweld Potion,Master,81.6,Alternating,10,Full,Standard,380.5,0.938,1
+Strengthening Solution,NEWT,106.4,Alternating,16,Full,Standard,567.8,0.598,1
+Skele-Gro,Student,107.9,Clockwise,7,New,Standard,271.0,0.41,1
+Pepper-Up Potion,Student,95.6,Alternating,17,Waning,Good,70.8,0.502,0
+Strengthening Solution,Auror,113.3,Alternating,9,Waxing,Exceptional,193.1,0.814,1
+Wolfsbane Potion,Auror,63.6,Clockwise,4,New,Good,53.5,0.698,1
+Wiggenweld Potion,Student,113.6,Alternating,7,Waning,Exceptional,452.8,0.562,1
+Wolfsbane Potion,Master,78.8,Alternating,7,Waning,Standard,689.6,0.914,1
+Wiggenweld Potion,Student,77.7,Counter-clockwise,6,Waning,Standard,211.0,0.388,1
+Wolfsbane Potion,Auror,92.1,Alternating,14,Waning,Good,313.7,0.87,1
+Wiggenweld Potion,Student,72.6,Clockwise,17,Waning,Standard,229.6,0.363,0
+Polyjuice Potion,Auror,106.7,Clockwise,15,Waning,Exceptional,633.5,0.846,0
+Felix Felicis,NEWT,98.3,Counter-clockwise,3,Waxing,Standard,291.5,0.579,0
+Polyjuice Potion,Auror,74.4,Counter-clockwise,18,Waxing,Standard,407.2,0.672,1
+Polyjuice Potion,Student,110.2,Alternating,6,Full,Standard,527.1,0.409,0
+Skele-Gro,NEWT,114.1,Alternating,18,New,Standard,310.5,0.5,0
+Felix Felicis,NEWT,60.2,Alternating,18,Waning,Standard,22.5,0.471,1
+Felix Felicis,Student,105.2,Counter-clockwise,5,Waxing,Good,707.6,0.454,1
+Felix Felicis,NEWT,65.9,Alternating,18,Full,Good,163.0,0.64,1
+Strengthening Solution,NEWT,90.3,Alternating,17,New,Good,546.0,0.699,1
+Skele-Gro,Student,103.9,Clockwise,20,Full,Poor,52.2,0.29,1
+Strengthening Solution,Student,98.7,Counter-clockwise,6,New,Standard,214.1,0.406,0
+Amortentia,NEWT,103.2,Counter-clockwise,5,New,Standard,113.8,0.554,0
+Skele-Gro,Auror,95.3,Alternating,14,Waxing,Poor,150.9,0.624,0
+Strengthening Solution,Student,73.9,Alternating,20,Waning,Exceptional,606.5,0.55,1
+Veritaserum,Student,68.2,Alternating,6,Waxing,Standard,17.1,0.341,0
+Draught of Living Death,Student,70.1,Alternating,9,Full,Standard,107.3,0.411,1
+Wiggenweld Potion,Auror,87.0,Counter-clockwise,21,New,Standard,209.0,0.735,1
+Skele-Gro,NEWT,106.2,Counter-clockwise,15,Waxing,Good,268.2,0.619,0
+Pepper-Up Potion,NEWT,102.8,Alternating,5,Full,Good,468.3,0.696,1
+Wiggenweld Potion,NEWT,104.1,Clockwise,4,Waxing,Standard,170.5,0.55,0
+Pepper-Up Potion,NEWT,114.5,Alternating,11,New,Exceptional,26.2,0.678,1
+Skele-Gro,Auror,76.1,Alternating,21,Full,Poor,18.8,0.59,1
+Polyjuice Potion,Student,105.2,Clockwise,16,Waxing,Standard,608.9,0.374,0
+Veritaserum,Master,88.6,Counter-clockwise,16,Full,Standard,240.7,0.973,1
+Strengthening Solution,Master,103.1,Clockwise,4,Full,Good,275.5,0.98,1
+Wolfsbane Potion,Student,105.9,Clockwise,5,Waxing,Standard,358.3,0.37,0
+Veritaserum,Master,100.5,Clockwise,4,Waxing,Exceptional,109.9,0.98,1
+Veritaserum,Master,91.0,Counter-clockwise,5,Waxing,Good,173.3,0.98,1
+Draught of Living Death,NEWT,118.7,Alternating,5,Waning,Good,622.7,0.556,1
+Skele-Gro,NEWT,114.7,Clockwise,14,New,Good,718.6,0.626,0
+Amortentia,NEWT,69.2,Alternating,21,Full,Standard,667.5,0.576,0
+Amortentia,NEWT,101.4,Counter-clockwise,4,New,Good,713.7,0.643,0
+Pepper-Up Potion,Auror,72.6,Clockwise,16,Waxing,Standard,35.3,0.663,1
+Polyjuice Potion,Student,80.8,Counter-clockwise,21,Waxing,Standard,143.3,0.404,0
+Polyjuice Potion,Auror,113.7,Alternating,4,New,Good,100.2,0.712,1
+Felix Felicis,NEWT,98.7,Alternating,4,New,Good,5.5,0.657,1
+Strengthening Solution,NEWT,104.1,Alternating,21,Waning,Exceptional,28.1,0.73,1
+Draught of Living Death,Student,91.0,Alternating,5,Full,Standard,91.7,0.505,0
+Veritaserum,Student,82.3,Clockwise,3,Waning,Exceptional,36.9,0.591,0
+Strengthening Solution,NEWT,114.1,Counter-clockwise,15,Waxing,Good,74.0,0.58,0
+Polyjuice Potion,Auror,75.7,Clockwise,14,Waxing,Good,213.3,0.809,1
+Veritaserum,Student,116.3,Counter-clockwise,13,Waning,Poor,390.3,0.169,0
+Felix Felicis,Student,72.2,Alternating,10,Waxing,Good,492.1,0.441,0
+Wolfsbane Potion,NEWT,114.1,Counter-clockwise,13,Waning,Exceptional,3.1,0.68,1
+Pepper-Up Potion,Student,68.0,Alternating,10,Waxing,Standard,81.0,0.34,1
+Amortentia,NEWT,112.1,Counter-clockwise,16,Full,Poor,634.8,0.419,0
+Pepper-Up Potion,Master,96.9,Counter-clockwise,11,Waning,Good,429.6,0.966,1
+Skele-Gro,Student,79.5,Alternating,14,Waxing,Good,403.8,0.527,0
+Wiggenweld Potion,Master,62.7,Alternating,11,Waning,Standard,484.9,0.783,1
+Wolfsbane Potion,NEWT,117.7,Clockwise,3,Waning,Standard,668.8,0.482,1
+Amortentia,NEWT,78.5,Counter-clockwise,9,Waxing,Poor,276.7,0.412,1
+Pepper-Up Potion,Student,97.6,Clockwise,21,Waning,Exceptional,370.2,0.592,1
+Pepper-Up Potion,Student,111.0,Clockwise,21,Full,Good,214.4,0.485,1
+Wolfsbane Potion,Master,74.3,Counter-clockwise,9,Full,Standard,269.6,0.901,1
+Skele-Gro,NEWT,112.3,Alternating,8,New,Good,506.0,0.588,0
+Veritaserum,Master,104.7,Counter-clockwise,19,Full,Exceptional,30.4,0.98,1
+Pepper-Up Potion,Master,103.4,Alternating,3,Waxing,Exceptional,222.5,0.98,1
+Felix Felicis,NEWT,95.3,Clockwise,9,New,Poor,665.4,0.444,0
+Pepper-Up Potion,Student,88.4,Clockwise,17,Waxing,Good,300.4,0.522,1
+Pepper-Up Potion,NEWT,114.3,Alternating,3,Waning,Exceptional,711.0,0.679,1
+Strengthening Solution,NEWT,71.6,Alternating,5,Waxing,Standard,630.9,0.528,1
+Pepper-Up Potion,Student,99.8,Clockwise,16,Full,Standard,15.5,0.461,0
+Strengthening Solution,Student,101.0,Clockwise,14,Full,Good,397.2,0.585,0
+Pepper-Up Potion,Student,81.6,Alternating,17,Full,Standard,41.3,0.468,1
+Strengthening Solution,Student,111.5,Alternating,16,New,Standard,357.3,0.342,1
+Amortentia,Auror,119.1,Clockwise,16,New,Good,581.5,0.684,1
+Strengthening Solution,NEWT,94.8,Counter-clockwise,18,New,Good,293.5,0.676,1
+Pepper-Up Potion,NEWT,86.0,Counter-clockwise,3,Full,Standard,567.7,0.66,0
+Wolfsbane Potion,Master,63.9,Clockwise,17,Waning,Exceptional,336.3,0.97,1
+Veritaserum,Master,92.6,Counter-clockwise,13,Waning,Standard,688.3,0.907,1
+Wolfsbane Potion,Master,104.8,Alternating,15,Full,Good,40.0,0.98,1
+Draught of Living Death,NEWT,79.2,Counter-clockwise,7,New,Good,702.8,0.696,1
+Draught of Living Death,Student,108.5,Clockwise,13,Waxing,Exceptional,232.6,0.538,1
+Skele-Gro,NEWT,84.8,Alternating,13,Waning,Good,520.5,0.674,1
+Strengthening Solution,Auror,99.7,Clockwise,21,Waxing,Poor,717.3,0.551,1
+Pepper-Up Potion,Student,74.9,Clockwise,3,Waning,Standard,710.2,0.375,1
+Pepper-Up Potion,Master,88.1,Clockwise,9,Waning,Standard,430.8,0.91,1
+Draught of Living Death,Auror,108.8,Clockwise,3,New,Standard,196.5,0.656,1
+Veritaserum,Master,119.6,Clockwise,9,Full,Good,551.0,0.912,0
+Strengthening Solution,NEWT,102.7,Alternating,5,Full,Standard,299.0,0.617,1
+Felix Felicis,Auror,63.0,Alternating,12,Full,Good,688.5,0.755,0
+Wolfsbane Potion,Master,99.8,Alternating,8,New,Standard,568.2,0.871,1
+Polyjuice Potion,NEWT,70.7,Counter-clockwise,11,New,Good,71.8,0.604,1
+Felix Felicis,NEWT,113.9,Alternating,20,Full,Standard,472.3,0.56,1
+Wolfsbane Potion,Student,105.6,Counter-clockwise,14,New,Good,472.1,0.502,0
+Amortentia,Master,87.9,Clockwise,10,Waxing,Good,659.2,0.98,1
+Polyjuice Potion,Auror,109.8,Clockwise,5,Full,Good,306.4,0.791,0
+Amortentia,Master,62.9,Alternating,10,New,Standard,133.1,0.785,1
+Pepper-Up Potion,NEWT,60.5,Clockwise,18,Waning,Standard,713.9,0.473,1
+Amortentia,NEWT,65.3,Clockwise,8,New,Good,34.6,0.576,0
+Pepper-Up Potion,Student,101.5,Alternating,15,Waxing,Standard,411.6,0.393,1
+Polyjuice Potion,Student,79.9,Alternating,9,New,Standard,561.2,0.399,0
+Draught of Living Death,Master,113.2,Counter-clockwise,10,Full,Standard,131.8,0.864,0
+Wiggenweld Potion,Master,104.1,Counter-clockwise,4,Waning,Standard,526.6,0.849,1
+Strengthening Solution,Student,90.3,Counter-clockwise,7,New,Good,635.9,0.578,1
+Draught of Living Death,NEWT,101.3,Counter-clockwise,11,Full,Good,565.5,0.703,1
+Strengthening Solution,Student,65.7,Counter-clockwise,13,Waning,Standard,556.9,0.329,0
+Amortentia,Student,111.0,Clockwise,13,Waning,Exceptional,210.1,0.525,0
+Wolfsbane Potion,NEWT,109.0,Counter-clockwise,13,Waning,Good,343.0,0.605,1
+Polyjuice Potion,NEWT,79.4,Clockwise,4,Waxing,Good,135.3,0.647,0
+Skele-Gro,Auror,105.6,Alternating,6,Full,Good,192.5,0.812,1
+Wiggenweld Potion,Student,102.0,Counter-clockwise,4,Full,Good,493.9,0.53,0
+Polyjuice Potion,Student,104.6,Clockwise,18,Waning,Good,131.9,0.457,0
+Wolfsbane Potion,NEWT,80.9,Counter-clockwise,4,Waning,Exceptional,470.1,0.754,1
+Wolfsbane Potion,Auror,113.7,Counter-clockwise,14,New,Exceptional,339.8,0.862,1
+Amortentia,Master,70.2,Alternating,14,Full,Good,650.1,0.98,1
+Wiggenweld Potion,NEWT,109.1,Alternating,14,Waning,Standard,585.8,0.575,0
+Skele-Gro,NEWT,70.8,Counter-clockwise,17,Full,Standard,141.3,0.584,1
+Felix Felicis,Student,79.8,Counter-clockwise,9,Waning,Poor,36.2,0.249,0
+Amortentia,Student,65.1,Alternating,16,Waxing,Good,253.9,0.405,0
+Wolfsbane Potion,Auror,116.0,Clockwise,12,New,Exceptional,157.9,0.8,1
+Felix Felicis,Student,95.5,Counter-clockwise,6,Waxing,Standard,239.8,0.423,0
+Felix Felicis,Auror,88.3,Clockwise,10,Waxing,Standard,387.6,0.742,0
+Polyjuice Potion,Master,72.7,Alternating,18,Full,Standard,175.2,0.894,0
+Skele-Gro,NEWT,101.8,Alternating,4,Waning,Exceptional,225.6,0.741,1
+Pepper-Up Potion,Master,85.1,Alternating,12,Full,Exceptional,646.1,0.98,1
+Draught of Living Death,Student,112.5,Alternating,16,Full,Standard,21.7,0.397,1
+Polyjuice Potion,Master,74.7,Alternating,17,New,Standard,463.6,0.844,1
+Draught of Living Death,NEWT,67.4,Counter-clockwise,13,Waxing,Good,288.1,0.587,0
+Draught of Living Death,Student,82.9,Counter-clockwise,11,Waxing,Standard,394.2,0.414,0
+Felix Felicis,Student,79.6,Alternating,7,Waning,Standard,561.9,0.448,0
+Pepper-Up Potion,Student,65.6,Counter-clockwise,8,Waxing,Good,61.0,0.408,1
+Strengthening Solution,NEWT,65.9,Clockwise,16,Full,Exceptional,488.7,0.74,1
+Polyjuice Potion,Master,119.2,Clockwise,7,Full,Standard,487.5,0.884,1
+Pepper-Up Potion,Auror,73.4,Clockwise,20,Full,Poor,5.2,0.577,1
+Polyjuice Potion,Auror,99.3,Alternating,10,Waning,Standard,162.9,0.704,1
+Polyjuice Potion,Auror,82.3,Counter-clockwise,18,Waning,Standard,111.4,0.712,0
+Veritaserum,Auror,67.1,Counter-clockwise,10,New,Standard,342.6,0.636,1
+Wiggenweld Potion,NEWT,82.0,Counter-clockwise,8,Waning,Exceptional,626.2,0.76,1
+Amortentia,NEWT,117.5,Alternating,6,Waning,Good,329.8,0.563,0
+Strengthening Solution,Master,91.0,Alternating,21,Waxing,Good,590.1,0.98,1
+Pepper-Up Potion,Auror,107.0,Alternating,5,Full,Standard,28.1,0.725,0
+Felix Felicis,NEWT,93.5,Counter-clockwise,4,New,Poor,287.1,0.453,1
+Wiggenweld Potion,NEWT,64.3,Alternating,15,Waning,Standard,175.7,0.492,0
+Wolfsbane Potion,NEWT,66.3,Counter-clockwise,10,New,Good,242.6,0.582,1
+Veritaserum,Auror,85.0,Counter-clockwise,20,Waxing,Poor,572.4,0.575,0
+Pepper-Up Potion,Student,82.9,Clockwise,18,New,Good,199.8,0.495,1
+Draught of Living Death,Master,99.6,Clockwise,21,Full,Standard,478.8,0.932,1
+Polyjuice Potion,Auror,67.4,Alternating,16,Waxing,Exceptional,674.8,0.817,1
+Polyjuice Potion,Auror,83.6,Counter-clockwise,5,New,Standard,550.7,0.718,1
+Draught of Living Death,NEWT,64.6,Clockwise,3,New,Exceptional,380.6,0.673,1
+Wiggenweld Potion,Auror,100.9,Alternating,11,Full,Good,114.4,0.836,1
+Draught of Living Death,Student,83.7,Counter-clockwise,12,Waxing,Standard,655.7,0.419,0
+Felix Felicis,Auror,89.9,Alternating,15,Waxing,Standard,493.7,0.75,0
+Polyjuice Potion,Master,104.4,Clockwise,12,New,Good,674.7,0.928,1
+Polyjuice Potion,Student,94.8,Alternating,7,Waning,Good,644.4,0.556,0
+Draught of Living Death,Master,113.0,Alternating,13,Waning,Exceptional,429.9,0.98,1
+Veritaserum,Auror,90.4,Clockwise,8,Full,Poor,526.8,0.658,1
+Wolfsbane Potion,NEWT,62.9,Alternating,13,Waxing,Standard,420.4,0.485,1
+Polyjuice Potion,NEWT,89.2,Counter-clockwise,6,Full,Standard,671.4,0.676,0
+Polyjuice Potion,Auror,101.1,Alternating,3,Waxing,Good,371.8,0.774,1
+Wiggenweld Potion,Student,74.3,Counter-clockwise,8,Waxing,Standard,553.4,0.372,0
+Wiggenweld Potion,Student,104.9,Counter-clockwise,5,Waxing,Standard,294.2,0.376,0
+Veritaserum,Master,107.5,Counter-clockwise,4,Full,Poor,469.5,0.742,1
+Amortentia,Auror,68.0,Clockwise,12,Full,Standard,702.1,0.7,1
+Wolfsbane Potion,Master,97.4,Clockwise,16,New,Good,375.2,0.963,1
+Veritaserum,NEWT,110.2,Counter-clockwise,12,Waxing,Poor,676.8,0.369,1
+Draught of Living Death,Auror,101.4,Alternating,17,Waning,Good,12.5,0.773,1
+Strengthening Solution,Student,74.0,Clockwise,10,Full,Standard,708.5,0.43,0
+Polyjuice Potion,Student,63.2,Clockwise,17,Full,Standard,45.3,0.376,0
+Pepper-Up Potion,Student,72.7,Alternating,10,New,Good,180.9,0.444,0
+Veritaserum,NEWT,64.2,Clockwise,16,Waning,Exceptional,707.7,0.671,1
+Wiggenweld Potion,NEWT,84.5,Counter-clockwise,17,New,Standard,455.7,0.593,0
+Felix Felicis,Master,117.4,Clockwise,15,Waning,Standard,177.2,0.783,1
+Draught of Living Death,Auror,60.0,Counter-clockwise,17,Full,Poor,623.9,0.51,1
+Amortentia,Auror,95.8,Counter-clockwise,20,Waning,Poor,501.9,0.571,0
+Amortentia,NEWT,116.8,Clockwise,9,Full,Standard,411.3,0.546,1
+Strengthening Solution,Auror,118.7,Clockwise,13,Waxing,Exceptional,333.0,0.787,1
+Felix Felicis,NEWT,91.7,Clockwise,5,Waning,Good,403.7,0.691,0
+Amortentia,Student,98.5,Counter-clockwise,18,Waxing,Standard,281.8,0.408,1
+Skele-Gro,Auror,106.4,Counter-clockwise,19,Waning,Good,282.6,0.748,1
+Pepper-Up Potion,Master,98.0,Alternating,19,Full,Good,606.5,0.98,1
+Wiggenweld Potion,Master,60.8,Counter-clockwise,5,Waning,Poor,543.4,0.624,1
+Wolfsbane Potion,Auror,82.6,Counter-clockwise,8,Waxing,Standard,477.3,0.713,1
+Polyjuice Potion,NEWT,99.3,Clockwise,15,New,Good,12.3,0.654,0
+Wiggenweld Potion,NEWT,103.1,Alternating,9,Full,Good,41.2,0.694,1
+Wiggenweld Potion,NEWT,110.5,Clockwise,13,Full,Poor,510.7,0.427,0
+Veritaserum,NEWT,88.8,Counter-clockwise,16,Waxing,Good,516.2,0.694,0
+Polyjuice Potion,Master,73.4,Counter-clockwise,17,New,Standard,514.0,0.837,1
+Polyjuice Potion,Student,78.8,Alternating,3,New,Good,504.5,0.474,1
+Skele-Gro,NEWT,105.3,Counter-clockwise,19,Full,Poor,689.3,0.454,1
+Felix Felicis,NEWT,88.8,Clockwise,18,Waxing,Standard,80.3,0.614,1
+Amortentia,Student,89.2,Clockwise,10,New,Exceptional,134.0,0.626,1
+Draught of Living Death,Student,119.0,Counter-clockwise,5,New,Good,25.6,0.385,1
+Strengthening Solution,NEWT,117.2,Clockwise,9,Waxing,Poor,317.6,0.334,1
+Veritaserum,Auror,81.7,Counter-clockwise,3,Full,Good,342.1,0.848,1
+Wolfsbane Potion,Student,88.3,Clockwise,17,Waxing,Good,382.6,0.522,0
+Strengthening Solution,NEWT,69.5,Alternating,4,Waxing,Poor,262.2,0.368,1
+Draught of Living Death,Auror,101.5,Alternating,17,Waning,Good,408.4,0.773,1
+Wolfsbane Potion,NEWT,78.2,Counter-clockwise,18,Waning,Good,610.3,0.641,0
+Strengthening Solution,NEWT,77.3,Counter-clockwise,11,Full,Exceptional,35.8,0.797,1
+Wolfsbane Potion,Auror,115.3,Alternating,13,Waning,Exceptional,447.1,0.803,0
+Felix Felicis,Auror,93.8,Clockwise,9,New,Poor,510.1,0.581,0
+Felix Felicis,NEWT,92.4,Clockwise,12,Waning,Standard,564.8,0.608,0
+Veritaserum,Student,117.5,Alternating,16,Full,Standard,64.9,0.372,1
+Skele-Gro,Auror,116.2,Alternating,8,Waxing,Good,13.0,0.699,1
+Draught of Living Death,NEWT,89.2,Clockwise,8,New,Standard,673.7,0.616,1
+Pepper-Up Potion,NEWT,108.7,Clockwise,3,Waxing,Good,689.1,0.607,1
+Strengthening Solution,Student,111.8,Clockwise,6,New,Poor,572.7,0.191,0
+Skele-Gro,Master,100.9,Alternating,10,Waning,Exceptional,65.9,0.98,1
+Felix Felicis,NEWT,74.1,Alternating,14,Full,Standard,636.6,0.651,1
+Veritaserum,Master,68.7,Alternating,17,Waning,Standard,465.5,0.814,1
+Draught of Living Death,Master,102.5,Alternating,11,Waxing,Standard,22.0,0.858,1
+Felix Felicis,Student,100.7,Clockwise,21,Waxing,Good,382.5,0.476,0
+Draught of Living Death,Student,83.7,Alternating,21,Full,Good,249.6,0.559,1
+Pepper-Up Potion,Auror,110.7,Counter-clockwise,12,Waxing,Good,61.1,0.726,0
+Draught of Living Death,Auror,78.3,Counter-clockwise,18,New,Standard,656.0,0.692,1
+Polyjuice Potion,NEWT,68.2,Alternating,13,Waxing,Standard,444.6,0.511,0
+Veritaserum,NEWT,81.2,Clockwise,19,Waxing,Standard,246.3,0.576,1
+Strengthening Solution,Student,68.6,Counter-clockwise,19,Full,Standard,477.4,0.403,0
+Strengthening Solution,Master,80.6,Counter-clockwise,12,Waxing,Standard,247.0,0.873,1
+Polyjuice Potion,Student,99.8,Counter-clockwise,21,Waxing,Poor,291.4,0.251,1
+Amortentia,Master,111.9,Counter-clockwise,19,Waxing,Standard,138.5,0.81,1
+Amortentia,Master,100.9,Alternating,21,New,Standard,437.6,0.865,1
+Veritaserum,Master,80.2,Alternating,19,Waning,Standard,676.3,0.871,0
+Strengthening Solution,NEWT,116.9,Clockwise,4,New,Poor,27.4,0.335,0
+Wiggenweld Potion,NEWT,114.2,Counter-clockwise,6,Full,Poor,644.4,0.409,1
+Draught of Living Death,Student,101.5,Alternating,10,New,Good,136.4,0.472,1
+Wolfsbane Potion,NEWT,118.7,Clockwise,11,New,Good,714.4,0.556,1
+Skele-Gro,Master,103.5,Clockwise,13,New,Exceptional,63.5,0.98,1
+Strengthening Solution,Auror,111.4,Alternating,6,Full,Poor,406.8,0.553,1
+Felix Felicis,Auror,69.8,Alternating,5,Full,Standard,252.8,0.709,1
+Draught of Living Death,Student,111.4,Alternating,13,Waxing,Exceptional,639.0,0.523,0
+Polyjuice Potion,Master,96.0,Alternating,3,New,Poor,52.9,0.74,1
+Skele-Gro,Auror,73.0,Clockwise,4,New,Good,302.1,0.745,1
+Amortentia,Student,89.4,Counter-clockwise,17,Waxing,Standard,281.7,0.447,0
+Veritaserum,Student,65.0,Clockwise,13,Waning,Standard,541.9,0.325,0
+Wolfsbane Potion,Master,98.9,Clockwise,11,Waning,Good,358.5,0.955,1
+Wiggenweld Potion,Auror,78.4,Counter-clockwise,12,Waxing,Exceptional,217.0,0.872,1
+Strengthening Solution,Student,88.0,Clockwise,9,New,Exceptional,446.0,0.62,1
+Strengthening Solution,Auror,84.7,Alternating,13,Full,Good,303.9,0.864,1
+Veritaserum,Master,110.5,Alternating,6,New,Standard,401.3,0.818,0
+Wolfsbane Potion,Student,67.6,Clockwise,9,Full,Standard,258.7,0.398,0
+Pepper-Up Potion,Student,60.1,Clockwise,16,New,Good,119.5,0.381,1
+Amortentia,Master,76.7,Counter-clockwise,10,Waxing,Good,625.1,0.934,0
+Wiggenweld Potion,Student,116.4,Counter-clockwise,21,Full,Good,56.6,0.458,1
+Pepper-Up Potion,Student,81.4,Alternating,3,Full,Standard,15.8,0.467,1
+Polyjuice Potion,Student,86.7,Counter-clockwise,11,New,Good,443.7,0.513,1
+Polyjuice Potion,NEWT,93.4,Counter-clockwise,17,Full,Standard,328.0,0.663,0
+Draught of Living Death,NEWT,101.3,Counter-clockwise,12,Full,Standard,48.1,0.623,1
+Draught of Living Death,Student,61.3,Alternating,14,Waning,Good,238.6,0.437,1
+Polyjuice Potion,NEWT,97.2,Counter-clockwise,12,New,Good,166.2,0.664,1
+Strengthening Solution,Auror,76.0,Alternating,12,Waning,Poor,87.0,0.53,1
+Veritaserum,NEWT,61.3,Alternating,11,Waning,Good,629.8,0.556,0
+Wolfsbane Potion,Master,103.6,Counter-clockwise,3,Full,Good,610.1,0.98,1
+Veritaserum,Student,94.1,Clockwise,21,Waning,Standard,187.6,0.43,0
+Pepper-Up Potion,NEWT,104.6,Counter-clockwise,14,Waxing,Exceptional,72.7,0.777,0
+Felix Felicis,NEWT,82.6,Counter-clockwise,3,New,Standard,368.1,0.583,0
+Wolfsbane Potion,Student,92.3,Alternating,13,Waning,Poor,24.8,0.289,0
+Strengthening Solution,NEWT,91.0,Counter-clockwise,20,Full,Standard,346.8,0.675,1
+Strengthening Solution,NEWT,104.2,Alternating,14,Waxing,Good,545.3,0.679,1
+Wolfsbane Potion,NEWT,108.8,Clockwise,6,Full,Standard,495.6,0.586,0
+Draught of Living Death,Student,119.0,Alternating,12,Waning,Exceptional,704.1,0.485,0
+Wiggenweld Potion,Master,100.0,Clockwise,9,Waxing,Good,408.8,0.95,1
+Strengthening Solution,Student,63.6,Alternating,5,Full,Standard,163.1,0.378,0
+Skele-Gro,NEWT,65.0,Counter-clockwise,20,Waning,Standard,450.9,0.495,1
+Skele-Gro,Auror,106.5,Alternating,5,Full,Good,692.1,0.808,1
+Felix Felicis,Student,94.9,Counter-clockwise,7,Full,Poor,530.9,0.386,0
+Polyjuice Potion,Auror,102.4,Clockwise,18,Full,Standard,284.1,0.748,1
+Wiggenweld Potion,NEWT,113.1,Alternating,6,Full,Standard,82.1,0.565,1
+Pepper-Up Potion,NEWT,91.0,Counter-clockwise,16,Full,Good,301.0,0.755,1
+Wolfsbane Potion,Auror,107.5,Counter-clockwise,8,Full,Good,714.9,0.803,1
+Polyjuice Potion,NEWT,63.3,Counter-clockwise,3,New,Good,50.7,0.566,1
+Pepper-Up Potion,Master,84.1,Clockwise,19,Waxing,Good,297.3,0.97,1
+Amortentia,Auror,94.4,Counter-clockwise,17,Waxing,Poor,336.4,0.578,1
+Strengthening Solution,Auror,75.4,Counter-clockwise,21,New,Exceptional,440.0,0.857,1
+Pepper-Up Potion,NEWT,76.6,Alternating,15,Waxing,Standard,393.6,0.553,1
+Polyjuice Potion,Student,73.5,Clockwise,14,Full,Standard,468.8,0.477,0
+Wiggenweld Potion,Auror,104.0,Counter-clockwise,10,Waning,Standard,144.0,0.68,0
+Veritaserum,Student,100.3,Alternating,14,Waxing,Poor,237.4,0.299,1
+Felix Felicis,Auror,86.0,Alternating,17,Full,Standard,528.3,0.79,1
+Wiggenweld Potion,Auror,97.5,Counter-clockwise,14,New,Poor,48.0,0.612,1
+Strengthening Solution,Auror,99.9,Clockwise,15,Waxing,Good,624.7,0.781,1
+Draught of Living Death,Student,70.3,Clockwise,9,New,Good,140.7,0.432,0
+Polyjuice Potion,Student,107.4,Clockwise,9,Full,Exceptional,323.9,0.603,1
+Strengthening Solution,NEWT,108.7,Counter-clockwise,14,Waning,Poor,443.7,0.427,0
+Wolfsbane Potion,Auror,108.6,Clockwise,6,New,Standard,513.6,0.657,1
+Strengthening Solution,Auror,87.0,Alternating,10,Waxing,Exceptional,302.5,0.915,1
+Pepper-Up Potion,Student,70.2,Clockwise,3,Waxing,Standard,362.7,0.351,1
+Wiggenweld Potion,Student,78.7,Clockwise,4,Waning,Standard,140.2,0.393,0
+Draught of Living Death,Auror,75.9,Counter-clockwise,8,Waning,Poor,60.0,0.53,1
+Draught of Living Death,Auror,86.5,Clockwise,20,Waxing,Poor,389.0,0.582,1
+Pepper-Up Potion,Master,86.1,Alternating,13,Waxing,Good,703.9,0.98,1
+Veritaserum,Student,69.2,Alternating,3,New,Good,321.5,0.426,1
+Polyjuice Potion,NEWT,115.3,Clockwise,13,New,Exceptional,322.4,0.674,1
+Wolfsbane Potion,Auror,118.8,Alternating,14,Full,Good,584.6,0.796,0
+Draught of Living Death,Student,102.3,Alternating,7,Waxing,Exceptional,307.4,0.619,1
+Wolfsbane Potion,Master,74.3,Counter-clockwise,21,New,Standard,227.1,0.842,1
+Strengthening Solution,NEWT,96.5,Clockwise,5,Waxing,Standard,489.6,0.588,1
+Pepper-Up Potion,Master,101.6,Alternating,19,Waxing,Standard,218.1,0.862,0
+Strengthening Solution,Master,91.1,Counter-clockwise,8,Full,Good,567.7,0.98,1
+Draught of Living Death,NEWT,68.0,Alternating,12,New,Good,425.1,0.59,0
+Draught of Living Death,Master,90.1,Alternating,8,New,Standard,603.3,0.92,1
+Draught of Living Death,Auror,105.7,Counter-clockwise,20,Waxing,Good,362.8,0.752,0
+Pepper-Up Potion,Student,97.6,Clockwise,20,New,Good,665.6,0.492,1
+Veritaserum,Student,71.6,Alternating,3,New,Good,534.1,0.438,1
+Strengthening Solution,Student,76.6,Counter-clockwise,20,New,Standard,515.1,0.383,0
+Wolfsbane Potion,Master,61.8,Clockwise,5,New,Standard,186.6,0.779,1
+Strengthening Solution,NEWT,114.8,Alternating,12,Full,Standard,31.9,0.556,1
+Pepper-Up Potion,Master,72.0,Alternating,14,New,Exceptional,635.6,0.98,1
+Pepper-Up Potion,Master,84.8,Clockwise,13,Full,Standard,430.0,0.954,1
+Felix Felicis,NEWT,76.2,Alternating,9,Full,Good,425.4,0.691,0
+Skele-Gro,Student,102.6,Clockwise,20,Waxing,Good,127.8,0.467,1
+Polyjuice Potion,Master,91.9,Alternating,11,Waning,Poor,717.3,0.761,1
+Wiggenweld Potion,NEWT,61.6,Clockwise,15,Waning,Standard,215.3,0.478,0
+Veritaserum,Student,71.7,Counter-clockwise,5,Waxing,Exceptional,699.4,0.538,1
+Felix Felicis,NEWT,66.3,Alternating,15,New,Exceptional,274.6,0.681,1
+Wolfsbane Potion,Student,84.7,Clockwise,14,Full,Good,231.9,0.613,1
+Amortentia,Auror,96.7,Clockwise,15,Full,Standard,420.5,0.777,1
+Skele-Gro,NEWT,91.0,Alternating,21,New,Standard,487.6,0.615,0
+Polyjuice Potion,NEWT,94.6,Counter-clockwise,21,Waxing,Poor,413.5,0.447,1
+Pepper-Up Potion,Master,65.7,Counter-clockwise,12,Waxing,Standard,566.1,0.798,1
+Strengthening Solution,Auror,118.0,Clockwise,18,Waxing,Standard,656.0,0.61,1
+Draught of Living Death,Master,79.9,Clockwise,14,Waxing,Good,672.1,0.98,1
+Skele-Gro,Master,74.5,Alternating,3,New,Standard,414.5,0.842,1
+Strengthening Solution,NEWT,112.8,Counter-clockwise,7,New,Exceptional,603.4,0.736,1
+Felix Felicis,NEWT,96.9,Clockwise,13,New,Good,377.0,0.666,1
+Polyjuice Potion,Auror,92.4,Clockwise,4,Full,Standard,372.8,0.798,0
+Draught of Living Death,NEWT,73.8,Clockwise,9,New,Poor,11.7,0.389,0
+Wolfsbane Potion,Auror,104.5,Counter-clockwise,8,Full,Good,713.1,0.818,1
+Wolfsbane Potion,Student,104.6,Clockwise,21,New,Exceptional,335.3,0.557,0
+Polyjuice Potion,Auror,63.2,Counter-clockwise,10,New,Good,326.4,0.696,1
+Skele-Gro,Master,88.3,Clockwise,13,Full,Standard,319.9,0.971,1
+Skele-Gro,Auror,70.2,Clockwise,16,Waning,Poor,672.1,0.501,0
+Amortentia,Auror,99.2,Clockwise,9,Waning,Standard,208.0,0.704,0
+Strengthening Solution,Auror,83.4,Counter-clockwise,12,Waning,Good,648.3,0.797,1
+Polyjuice Potion,Student,78.5,Counter-clockwise,4,Waning,Good,654.4,0.472,0
+Wolfsbane Potion,Student,88.7,Clockwise,4,Waxing,Standard,302.5,0.444,0
+Polyjuice Potion,NEWT,86.2,Counter-clockwise,6,Full,Exceptional,598.8,0.841,1
+Strengthening Solution,Auror,67.5,Counter-clockwise,6,New,Poor,578.2,0.487,0
+Wiggenweld Potion,Auror,82.4,Clockwise,14,Full,Standard,488.4,0.822,0
+Pepper-Up Potion,Student,113.2,Clockwise,16,Waning,Standard,274.3,0.334,0
+Amortentia,Master,114.7,Clockwise,16,New,Exceptional,81.4,0.976,1
+Draught of Living Death,Master,80.5,Clockwise,7,Waxing,Exceptional,287.4,0.98,1
+Strengthening Solution,Master,79.3,Alternating,15,Full,Good,123.5,0.98,1
+Felix Felicis,Student,63.6,Counter-clockwise,8,Waning,Standard,352.4,0.318,1
+Wolfsbane Potion,Student,67.2,Clockwise,21,Full,Good,618.6,0.476,1
+Veritaserum,Auror,115.8,Alternating,5,Waning,Standard,187.6,0.621,1
+Pepper-Up Potion,Master,67.8,Counter-clockwise,13,Waxing,Good,622.4,0.889,0
+Veritaserum,Student,113.0,Counter-clockwise,11,Full,Good,359.4,0.475,1
+Pepper-Up Potion,NEWT,84.8,Counter-clockwise,21,Waning,Standard,250.2,0.594,1
+Veritaserum,Auror,64.8,Alternating,11,New,Good,116.3,0.704,0
+Pepper-Up Potion,Auror,99.7,Clockwise,14,Waning,Standard,706.9,0.752,1
+Wolfsbane Potion,Student,114.7,Counter-clockwise,20,Full,Standard,587.8,0.387,1
+Draught of Living Death,Student,103.0,Clockwise,21,New,Poor,18.1,0.235,0
+Strengthening Solution,NEWT,98.0,Clockwise,12,Full,Good,224.5,0.72,1
+Wiggenweld Potion,Master,95.7,Alternating,10,Full,Good,305.1,0.98,1
+Felix Felicis,Student,73.9,Counter-clockwise,18,Waxing,Standard,525.8,0.37,0
+Polyjuice Potion,Auror,82.2,Clockwise,15,Waxing,Standard,346.0,0.711,0
+Felix Felicis,Master,71.7,Counter-clockwise,20,Full,Standard,715.0,0.889,1
+Strengthening Solution,Student,89.0,Counter-clockwise,6,Full,Exceptional,62.7,0.685,1
+Veritaserum,NEWT,85.3,Clockwise,17,Waxing,Good,184.1,0.676,1
+Skele-Gro,Student,68.2,Clockwise,14,New,Good,477.3,0.471,1
+Wolfsbane Potion,Student,66.2,Alternating,9,New,Good,569.4,0.411,0
+Strengthening Solution,Auror,94.0,Counter-clockwise,13,Waning,Standard,354.6,0.73,1
+Veritaserum,NEWT,113.7,Alternating,14,Waxing,Standard,52.8,0.552,1
+Felix Felicis,NEWT,114.2,Counter-clockwise,13,Waxing,Poor,239.6,0.349,0
+Skele-Gro,NEWT,108.5,Alternating,4,Full,Good,317.3,0.668,1
+Pepper-Up Potion,Student,87.6,Alternating,20,New,Good,186.6,0.518,1
+Pepper-Up Potion,NEWT,68.3,Counter-clockwise,13,New,Good,147.6,0.592,0
+Veritaserum,Master,65.7,Alternating,15,New,Standard,173.8,0.799,1
+Wiggenweld Potion,Master,90.3,Clockwise,7,Waning,Standard,158.8,0.969,1
+Felix Felicis,Master,91.0,Clockwise,5,Full,Standard,335.3,0.975,1
+Polyjuice Potion,NEWT,91.5,Counter-clockwise,15,Full,Standard,353.4,0.672,1
+Felix Felicis,NEWT,91.3,Clockwise,21,Waning,Good,71.6,0.694,1
+Skele-Gro,NEWT,101.2,Counter-clockwise,15,Full,Standard,227.9,0.624,1
+Wiggenweld Potion,Student,81.7,Counter-clockwise,8,Waxing,Standard,687.5,0.408,0
+Draught of Living Death,Student,64.7,Alternating,13,Full,Exceptional,288.4,0.564,1
+Amortentia,Auror,72.1,Clockwise,15,Waxing,Standard,110.4,0.66,1
+Wolfsbane Potion,NEWT,90.7,Clockwise,14,Waning,Good,508.6,0.747,1
+Skele-Gro,NEWT,116.3,Alternating,8,New,Exceptional,134.0,0.669,0
+Wiggenweld Potion,NEWT,82.1,Alternating,3,Waning,Exceptional,31.9,0.761,1
+Pepper-Up Potion,Auror,70.6,Alternating,7,Full,Good,531.9,0.843,1
+Strengthening Solution,Auror,88.7,Clockwise,18,Waxing,Exceptional,617.4,0.924,1
+Pepper-Up Potion,Student,66.3,Clockwise,12,New,Good,25.3,0.412,1
+Felix Felicis,Student,61.8,Counter-clockwise,20,Full,Standard,499.9,0.369,0
+Veritaserum,Master,74.7,Counter-clockwise,18,Waning,Good,631.5,0.923,1
+Veritaserum,NEWT,114.2,Alternating,3,Full,Standard,156.2,0.559,1
+Draught of Living Death,Auror,74.2,Clockwise,9,Waxing,Standard,332.0,0.671,1
+Strengthening Solution,Student,104.1,Alternating,19,New,Good,148.3,0.46,0
+Skele-Gro,Master,110.9,Clockwise,19,Full,Exceptional,80.3,0.98,1
+Strengthening Solution,Student,102.9,Counter-clockwise,4,New,Standard,326.3,0.386,0
+Felix Felicis,Auror,101.1,Counter-clockwise,4,Waxing,Good,496.6,0.775,0
+Veritaserum,NEWT,79.3,Clockwise,17,New,Poor,286.7,0.417,0
+Amortentia,Student,100.6,Clockwise,16,Waxing,Good,313.1,0.477,1
+Draught of Living Death,Student,61.8,Alternating,16,Waxing,Good,673.0,0.389,0
+Felix Felicis,Auror,109.2,Alternating,4,Waning,Poor,173.2,0.504,1
+Pepper-Up Potion,Student,70.8,Counter-clockwise,11,Waxing,Good,226.4,0.434,1
+Pepper-Up Potion,Master,85.9,Counter-clockwise,7,Full,Poor,647.1,0.859,0
+Amortentia,Student,66.3,Counter-clockwise,21,Waxing,Standard,411.8,0.332,0
+Amortentia,Master,106.8,Clockwise,3,Full,Good,51.4,0.976,1
+Wolfsbane Potion,Student,100.3,Alternating,10,Full,Poor,620.5,0.309,0
+Skele-Gro,NEWT,86.8,Counter-clockwise,20,Waning,Standard,262.2,0.604,1
+Skele-Gro,Auror,65.4,Counter-clockwise,21,Waxing,Standard,655.7,0.627,0
+Felix Felicis,Auror,65.6,Alternating,16,New,Standard,112.6,0.628,0
+Veritaserum,Student,89.5,Clockwise,6,New,Standard,240.5,0.447,1
+Amortentia,NEWT,74.2,Clockwise,20,Waxing,Good,50.4,0.621,1
+Draught of Living Death,Student,88.0,Alternating,9,New,Standard,252.7,0.44,0
+Wiggenweld Potion,NEWT,109.5,Alternating,3,Full,Standard,164.4,0.582,1
+Felix Felicis,Auror,66.9,Clockwise,15,New,Good,385.8,0.714,1
+Veritaserum,Auror,61.0,Clockwise,15,Waning,Good,264.0,0.685,0
+Amortentia,NEWT,119.9,Clockwise,19,Waxing,Good,288.7,0.55,1
+Pepper-Up Potion,Student,116.8,Alternating,4,Waning,Standard,351.4,0.316,0
+Wiggenweld Potion,Master,117.9,Alternating,20,Waning,Standard,672.1,0.78,1
+Pepper-Up Potion,Master,70.2,Alternating,13,New,Good,389.6,0.901,0
+Veritaserum,Auror,61.1,Clockwise,15,New,Standard,638.2,0.606,0
+Strengthening Solution,NEWT,78.8,Clockwise,12,Full,Standard,478.2,0.624,0
+Pepper-Up Potion,NEWT,79.2,Alternating,4,Waxing,Exceptional,460.4,0.746,1
+Veritaserum,Student,86.9,Clockwise,15,Full,Exceptional,644.6,0.675,1
+Wolfsbane Potion,Master,96.5,Alternating,20,New,Good,272.6,0.968,1
+Amortentia,NEWT,115.9,Clockwise,14,Full,Good,488.2,0.681,1
+Amortentia,Master,117.3,Alternating,3,Waxing,Standard,317.7,0.784,1
+Skele-Gro,NEWT,62.8,Clockwise,10,New,Good,259.8,0.564,1
+Skele-Gro,Student,117.7,Counter-clockwise,17,New,Poor,602.9,0.161,1
+Wiggenweld Potion,Master,63.6,Alternating,12,New,Standard,654.6,0.788,0
+Wiggenweld Potion,Auror,95.1,Clockwise,4,Waxing,Standard,700.5,0.725,1
+Wolfsbane Potion,Student,68.5,Clockwise,15,New,Standard,539.0,0.343,1
+Amortentia,NEWT,91.9,Clockwise,15,Waxing,Standard,81.3,0.61,1
+Felix Felicis,Master,92.2,Counter-clockwise,12,Waxing,Standard,658.6,0.909,1
+Strengthening Solution,Student,85.2,Clockwise,19,Waxing,Poor,104.8,0.276,0
+Wiggenweld Potion,NEWT,90.6,Counter-clockwise,10,Waning,Standard,694.0,0.617,0
+Skele-Gro,Student,104.9,Alternating,15,Waxing,Standard,577.4,0.375,0
+Draught of Living Death,Student,98.9,Counter-clockwise,5,Waxing,Good,20.0,0.486,1
+Polyjuice Potion,Master,108.6,Clockwise,12,New,Good,246.9,0.907,1
+Strengthening Solution,Auror,75.6,Counter-clockwise,4,Waxing,Good,117.5,0.758,0
+Wiggenweld Potion,Student,91.1,Clockwise,14,Waning,Good,41.7,0.575,0
+Polyjuice Potion,Student,84.2,Alternating,18,Waxing,Good,439.2,0.501,1
+Amortentia,Master,71.7,Counter-clockwise,16,Full,Standard,640.3,0.888,1
+Draught of Living Death,Master,101.9,Clockwise,11,Waning,Exceptional,399.8,0.98,1
+Pepper-Up Potion,NEWT,113.3,Clockwise,4,Waxing,Good,413.9,0.583,1
+Felix Felicis,Auror,102.9,Counter-clockwise,15,Waxing,Standard,81.7,0.686,1
+Wiggenweld Potion,NEWT,117.2,Clockwise,11,Full,Standard,150.1,0.544,0
+Skele-Gro,NEWT,106.2,Alternating,7,Full,Good,536.5,0.729,1
+Veritaserum,Student,111.5,Counter-clockwise,10,Full,Exceptional,228.3,0.583,1
+Wiggenweld Potion,NEWT,73.4,Clockwise,11,New,Exceptional,222.4,0.717,1
+Polyjuice Potion,Student,61.6,Clockwise,14,Full,Poor,213.4,0.268,0
+Pepper-Up Potion,NEWT,90.8,Clockwise,12,Waxing,Poor,111.4,0.466,0
+Skele-Gro,Master,67.1,Counter-clockwise,5,New,Good,460.8,0.885,0
+Felix Felicis,Auror,80.8,Clockwise,14,Waning,Good,175.0,0.834,1
+Pepper-Up Potion,Master,117.5,Clockwise,4,New,Standard,282.1,0.782,0
+Felix Felicis,NEWT,70.2,Alternating,15,Full,Poor,341.9,0.431,0
+Pepper-Up Potion,NEWT,108.1,Counter-clockwise,9,Full,Good,441.2,0.669,1
+Polyjuice Potion,NEWT,69.9,Counter-clockwise,3,Waxing,Standard,196.5,0.52,0
+Felix Felicis,Master,103.2,Alternating,5,Waxing,Good,679.9,0.934,1
+Pepper-Up Potion,Auror,101.2,Alternating,20,Waxing,Standard,81.4,0.694,1
+Wolfsbane Potion,NEWT,63.8,Alternating,11,Waning,Exceptional,651.4,0.669,0
+Wiggenweld Potion,NEWT,98.3,Counter-clockwise,5,Full,Standard,227.8,0.639,1
+Amortentia,NEWT,81.9,Clockwise,10,New,Standard,454.2,0.58,0
+Polyjuice Potion,Auror,106.0,Alternating,5,New,Exceptional,333.9,0.85,1
+Draught of Living Death,Student,96.6,Counter-clockwise,4,Full,Good,14.8,0.557,0
+Polyjuice Potion,NEWT,92.1,Counter-clockwise,6,Full,Good,665.1,0.749,1
+Polyjuice Potion,NEWT,96.4,Alternating,21,New,Good,228.7,0.668,1
+Wiggenweld Potion,NEWT,79.1,Counter-clockwise,5,Full,Exceptional,171.1,0.806,0
+Felix Felicis,NEWT,115.3,Alternating,8,Waxing,Standard,177.9,0.493,1
+Felix Felicis,NEWT,60.9,Counter-clockwise,3,New,Standard,665.9,0.475,0
+Pepper-Up Potion,Student,97.9,Clockwise,7,Waxing,Good,199.6,0.54,1
+Amortentia,NEWT,94.0,Clockwise,7,Full,Poor,448.4,0.56,0
+Strengthening Solution,Auror,80.0,Alternating,17,Full,Poor,84.1,0.61,1
+Strengthening Solution,Student,92.7,Clockwise,5,Full,Good,619.8,0.576,0
+Strengthening Solution,Student,90.4,Counter-clockwise,16,Full,Exceptional,263.8,0.688,1
+Felix Felicis,NEWT,106.2,Clockwise,5,Waxing,Exceptional,456.4,0.719,0
+Veritaserum,Student,97.3,Alternating,8,Waning,Good,389.1,0.493,0

@@ -1,0 +1,31 @@
+Plant_Name,Category,Lunar_Sensitivity,Magical_Potency,Toxicity,Harvest_Difficulty,Growth_Days,Optimal_Moon_Phase,Primary_Potion_Use,Restricted,Rarity_Score
+Mandrake,Herbology,0.952,0.632,0.015,0.921,365,Waxing,Transformation,0,0.523
+Gillyweed,Aquatic,0.133,0.702,0.122,0.868,190,New,Mind-Altering,0,0.504
+Bubotuber,Herbology,0.603,0.989,0.039,0.254,280,Full,Dark,0,0.379
+Venomous Tentacula,Dangerous,0.235,0.801,0.109,0.193,285,Waning,Strength,0,0.219
+Devil's Snare,Dangerous,0.379,0.677,0.21,0.836,105,Waning,Transformation,0,0.519
+Fluxweed,Common,0.858,0.824,0.046,0.11,210,Waxing,Healing,0,0.252
+Boomslang,Ingredient,0.454,0.65,0.044,0.546,104,Waning,Transformation,0,0.648
+Shrivelfig,Common,0.018,0.501,0.27,0.657,115,New,Strength,0,0.543
+Dittany,Healing,0.474,0.688,0.054,0.316,54,Waning,Transformation,0,0.203
+Aconite,Dangerous,0.051,0.58,0.88,0.708,103,Waxing,Dark,1,0.297
+Bitterroot,Common,0.032,0.55,0.23,0.466,90,Full,Transformation,0,0.334
+Alihotsy,Mood-Altering,0.928,0.334,0.201,0.276,71,Waning,Transformation,0,0.807
+Screechsnap,Animated,0.854,0.766,0.199,0.436,317,Waxing,Dark,0,0.708
+Fanged Geranium,Dangerous,0.52,0.545,0.088,0.219,269,Waxing,Dark,0,0.816
+Chinese Chomping Cabbage,Animated,0.317,0.853,0.238,0.917,163,New,Dark,0,0.276
+Mimbulus Mimbletonia,Rare,0.466,0.205,0.264,0.13,351,New,Strength,0,0.184
+Puffapod,Common,0.568,0.234,0.122,0.854,116,Waning,Dark,0,0.181
+Honking Daffodil,Animated,0.25,0.982,0.229,0.739,266,New,Mind-Altering,0,0.901
+Nettles,Common,0.549,0.367,0.097,0.943,168,New,Transformation,0,0.298
+Belladonna,Dangerous,0.589,0.749,0.679,0.881,260,Full,Strength,1,0.579
+Knotgrass,Common,0.03,0.513,0.08,0.955,293,Waning,Dark,0,0.249
+Lacewing Flies,Ingredient,0.09,0.388,0.253,0.456,216,New,Dark,0,0.693
+Sopophorous Bean,Ingredient,0.319,0.492,0.2,0.945,219,New,Dark,0,0.199
+Moonflower,Lunar,0.458,0.347,0.043,0.971,131,Full,Strength,0,0.394
+Bloodroot,Dark Arts,0.04,0.284,0.139,0.273,63,Full,Healing,1,0.875
+Wormwood,Common,0.504,0.899,0.036,0.546,271,Full,Dark,0,0.391
+Asphodel,Common,0.618,0.949,0.07,0.526,188,Waxing,Strength,0,0.793
+Bicorn Horn,Ingredient,0.61,0.436,0.156,0.906,105,Waxing,Transformation,0,0.395
+Flobberworm,Ingredient,0.199,0.96,0.279,0.596,126,New,Transformation,0,0.138
+Horned Slug,Ingredient,0.177,0.234,0.161,0.295,273,Full,Mind-Altering,0,0.41

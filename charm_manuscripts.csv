@@ -1,0 +1,251 @@
+Charm_ID,Incantation,Category,Difficulty,Intention,Century,Syllable_Count,Vowel_Count,Consonant_Count,Ends_in_A,Has_Double_Letter,Effectiveness,Recovered,Manuscript_Damage_Pct,Status
+CHM-1000,Redeletorus,Jinx,Advanced,Utility,13,6,5,6,0,0,54,1,11,Recovered
+CHM-1001,Suboblivatus,Jinx,Intermediate,Utility,19,2,5,7,0,0,83,0,45,Lost — Partial
+CHM-1002,Expeendo,Curse,Advanced,Transfiguration,16,6,4,4,0,1,45,1,20,Recovered
+CHM-1003,Ferus,Enchantment,Beginner,Defensive,12,6,2,3,0,0,40,0,25,Lost — Partial
+CHM-1004,Vulneorus,Jinx,Advanced,Defensive,17,5,4,5,0,0,94,1,9,Recovered
+CHM-1005,Subferuia,Enchantment,Beginner,Healing,20,3,5,4,1,0,81,1,14,Recovered
+CHM-1006,Bombaificus,Enchantment,Advanced,Transfiguration,19,2,5,6,0,0,78,0,7,Lost — Partial
+CHM-1007,Proteum,Charm,Advanced,Healing,14,3,3,4,0,0,75,1,1,Recovered
+CHM-1008,Stupefia,Curse,Intermediate,Defensive,14,5,4,4,1,0,63,0,27,Lost — Partial
+CHM-1009,Patronendo,Counter-Spell,Beginner,Defensive,20,3,4,6,0,0,52,1,10,Recovered
+CHM-1010,Transferulaium,Hex,Advanced,Transfiguration,20,5,6,8,0,0,70,1,6,Recovered
+CHM-1011,Suboblivara,Jinx,N.E.W.T.,Defensive,13,7,5,6,1,0,74,1,18,Recovered
+CHM-1012,Episkatus,Enchantment,Beginner,Offensive,16,5,4,5,0,0,54,1,8,Recovered
+CHM-1013,Exserpenatus,Hex,Advanced,Offensive,19,5,5,7,0,0,61,0,6,Lost — Partial
+CHM-1014,Bombaium,Curse,Advanced,Offensive,19,5,4,4,0,0,83,1,18,Recovered
+CHM-1015,Perepiskus,Charm,Beginner,Healing,10,7,4,6,0,0,32,1,20,Recovered
+CHM-1016,Exferuendo,Hex,Beginner,Defensive,19,7,5,5,0,0,67,1,12,Recovered
+CHM-1017,Stupeforus,Curse,N.E.W.T.,Offensive,11,7,4,6,0,0,70,0,1,Lost — Partial
+CHM-1018,Episium,Charm,Beginner,Transfiguration,19,4,4,3,0,0,72,0,7,Lost — Partial
+CHM-1019,Alohomatus,Jinx,Advanced,Offensive,10,5,5,5,0,0,63,0,17,Lost — Partial
+CHM-1020,Expeatus,Charm,Intermediate,Offensive,19,4,4,4,0,0,90,1,9,Recovered
+CHM-1021,Adsectuus,Jinx,Intermediate,Utility,9,3,4,5,0,1,59,1,1,Recovered
+CHM-1022,Consanentus,Counter-Spell,Intermediate,Healing,11,2,4,7,0,0,98,1,6,Recovered
+CHM-1023,Obliium,Jinx,Beginner,Transfiguration,10,2,4,3,0,1,63,1,16,Recovered
+CHM-1024,Oblivus,Charm,Advanced,Utility,13,3,3,4,0,0,86,1,10,Recovered
+CHM-1025,Consaneorus,Charm,N.E.W.T.,Offensive,20,2,5,6,0,0,89,1,12,Recovered
+CHM-1026,Adseratus,Enchantment,Beginner,Transfiguration,15,7,4,5,0,0,51,0,67,Lost — Partial
+CHM-1027,Profinificus,Jinx,Arcane,Utility,20,6,5,7,0,0,77,1,4,Recovered
+CHM-1028,Adexpeium,Hex,Beginner,Utility,15,3,5,4,0,0,62,1,5,Recovered
+CHM-1029,Inincanara,Jinx,Beginner,Offensive,12,6,5,5,1,0,65,1,4,Recovered
+CHM-1030,Secia,Charm,Beginner,Utility,10,7,3,2,1,0,52,1,13,Recovered
+CHM-1031,Adseratus,Hex,N.E.W.T.,Utility,20,6,4,5,0,0,83,0,67,Lost — Partial
+CHM-1032,Noxium,Curse,Intermediate,Utility,9,7,3,3,0,0,54,1,20,Recovered
+CHM-1033,Exsanenara,Charm,Arcane,Healing,16,6,5,5,1,0,98,1,20,Recovered
+CHM-1034,Subproia,Jinx,Beginner,Defensive,20,6,4,4,1,0,47,0,67,Lost — Partial
+CHM-1035,Transmorsatus,Jinx,Intermediate,Healing,11,5,4,9,0,0,59,0,42,Lost — Partial
+CHM-1036,Deexpara,Charm,Advanced,Defensive,14,3,4,4,1,1,74,0,19,Lost — Partial
+CHM-1037,Subreporus,Curse,Beginner,Healing,18,6,4,6,0,0,50,1,0,Recovered
+CHM-1038,Pronoxium,Enchantment,Beginner,Offensive,18,2,4,5,0,0,80,1,0,Recovered
+CHM-1039,Transsectuorus,Hex,Beginner,Utility,14,6,5,9,0,1,51,1,19,Recovered
+CHM-1040,Exbombarorus,Charm,Intermediate,Healing,12,5,5,7,0,0,51,0,66,Lost — Partial
+CHM-1041,Transreparara,Curse,Intermediate,Offensive,9,3,5,8,1,0,83,1,8,Recovered
+CHM-1042,Transfinius,Counter-Spell,Intermediate,Offensive,14,4,4,7,0,0,67,0,79,Lost — Partial
+CHM-1043,Priorendo,Hex,Intermediate,Offensive,19,4,4,5,0,0,66,1,14,Recovered
+CHM-1044,Proferulaificus,Enchantment,Advanced,Defensive,16,5,7,8,0,0,88,0,20,Lost — Partial
+CHM-1045,Subdeletrara,Counter-Spell,Arcane,Transfiguration,15,5,5,7,1,0,73,1,4,Recovered
+CHM-1046,Transmorsmoum,Curse,Beginner,Transfiguration,12,4,4,9,0,0,62,1,7,Recovered
+CHM-1047,Expendo,Counter-Spell,Arcane,Defensive,20,4,3,4,0,0,91,1,7,Recovered
+CHM-1048,Adseratus,Charm,N.E.W.T.,Defensive,19,3,4,5,0,0,81,1,15,Recovered
+CHM-1049,Ferulus,Counter-Spell,Beginner,Transfiguration,17,6,3,4,0,0,68,1,8,Recovered
+CHM-1050,Delendo,Jinx,Beginner,Offensive,9,4,3,4,0,0,89,1,8,Recovered
+CHM-1051,Morsia,Charm,Intermediate,Utility,20,2,3,3,1,0,67,1,2,Recovered
+CHM-1052,Adepiskara,Jinx,Beginner,Defensive,13,3,5,5,1,0,58,1,12,Recovered
+CHM-1053,Subferulificus,Hex,Intermediate,Transfiguration,14,2,6,8,0,0,76,1,15,Recovered
+CHM-1054,Perpatratus,Counter-Spell,Beginner,Offensive,19,5,4,7,0,0,50,1,8,Recovered
+CHM-1055,Deferuia,Curse,Intermediate,Transfiguration,20,6,5,3,1,0,65,0,80,Lost — Partial
+CHM-1056,Subaloorus,Curse,Intermediate,Defensive,19,4,5,5,0,1,40,1,13,Recovered
+CHM-1057,Depatrium,Hex,Advanced,Transfiguration,16,3,4,5,0,0,70,1,1,Recovered
+CHM-1058,Exepisara,Counter-Spell,Intermediate,Offensive,14,4,5,4,1,0,73,0,65,Lost — Partial
+CHM-1059,Bombaendo,Jinx,Beginner,Defensive,12,3,4,5,0,0,50,0,73,Lost — Partial
+CHM-1060,Conridia,Enchantment,Intermediate,Transfiguration,13,6,4,4,1,0,65,0,53,Lost — Partial
+CHM-1061,Rebombarara,Curse,Advanced,Transfiguration,9,4,5,6,1,0,82,1,10,Recovered
+CHM-1062,Bomatus,Jinx,Arcane,Utility,10,5,3,4,0,0,69,0,57,Lost — Partial
+CHM-1063,Inexpificus,Counter-Spell,Beginner,Healing,20,5,5,6,0,0,61,1,10,Recovered
+CHM-1064,Inproteara,Jinx,Beginner,Offensive,9,3,5,5,1,0,80,1,8,Recovered
+CHM-1065,Adriddara,Counter-Spell,Beginner,Utility,9,6,4,5,1,1,64,0,54,Lost — Partial
+CHM-1066,Instupefus,Jinx,Beginner,Transfiguration,19,6,4,6,0,0,40,0,41,Lost — Partial
+CHM-1067,Accia,Counter-Spell,Beginner,Healing,19,3,3,2,1,1,59,1,4,Recovered
+CHM-1068,Protegus,Enchantment,N.E.W.T.,Healing,10,3,3,5,0,0,77,1,19,Recovered
+CHM-1069,Vulnerorus,Curse,N.E.W.T.,Offensive,10,4,4,6,0,0,83,1,14,Recovered
+CHM-1070,Inepiskus,Enchantment,Beginner,Healing,17,2,4,5,0,0,51,0,0,Lost — Partial
+CHM-1071,Proium,Jinx,Beginner,Utility,10,3,3,3,0,0,66,1,9,Recovered
+CHM-1072,Oblivara,Charm,N.E.W.T.,Offensive,20,3,4,4,1,0,91,0,4,Lost — Partial
+CHM-1073,Subsectia,Enchantment,Arcane,Utility,16,3,4,5,1,0,100,0,6,Lost — Partial
+CHM-1074,Perproendo,Counter-Spell,Advanced,Healing,14,4,4,6,0,0,69,1,20,Recovered
+CHM-1075,Peraccioara,Enchantment,Arcane,Offensive,15,2,6,5,1,1,91,1,16,Recovered
+CHM-1076,Inlevius,Enchantment,Intermediate,Utility,13,3,4,4,0,0,77,1,6,Recovered
+CHM-1077,Redelendo,Hex,Beginner,Healing,16,5,4,5,0,0,54,0,68,Lost — Partial
+CHM-1078,Adaccorus,Jinx,Advanced,Healing,12,5,4,5,0,1,58,1,17,Recovered
+CHM-1079,Protium,Enchantment,N.E.W.T.,Transfiguration,11,4,3,4,0,0,66,0,79,Lost — Partial
+CHM-1080,Innoxum,Hex,Advanced,Defensive,15,3,3,4,0,1,71,1,3,Recovered
+CHM-1081,Adalohomendo,Enchantment,Advanced,Utility,15,6,6,6,0,0,56,1,7,Recovered
+CHM-1082,Deprotia,Curse,Beginner,Defensive,19,7,4,4,1,0,59,1,13,Recovered
+CHM-1083,Serpeium,Hex,Intermediate,Defensive,14,2,4,4,0,0,57,0,16,Lost — Partial
+CHM-1084,Inleviosatus,Hex,Advanced,Healing,19,5,6,6,0,0,73,0,78,Lost — Partial
+CHM-1085,Refinitara,Hex,Beginner,Transfiguration,14,6,5,5,1,0,68,0,66,Lost — Partial
+CHM-1086,Transvulneorus,Jinx,Advanced,Utility,14,7,5,9,0,0,66,1,19,Recovered
+CHM-1087,Transserpara,Counter-Spell,Beginner,Defensive,11,4,4,8,1,1,63,1,20,Recovered
+CHM-1088,Expecium,Jinx,Advanced,Defensive,18,3,4,4,0,0,71,1,0,Recovered
+CHM-1089,Sectumorus,Charm,Intermediate,Defensive,10,4,4,6,0,0,44,1,5,Recovered
+CHM-1090,Stupeia,Curse,Beginner,Offensive,18,4,4,3,1,0,73,0,24,Lost — Partial
+CHM-1091,Transoblivium,Charm,Intermediate,Healing,11,7,5,8,0,0,58,1,5,Recovered
+CHM-1092,Sectus,Hex,Beginner,Healing,13,7,2,4,0,0,62,1,5,Recovered
+CHM-1093,Conoblara,Jinx,Beginner,Transfiguration,11,7,4,5,1,0,75,1,4,Recovered
+CHM-1094,Riddiorus,Charm,N.E.W.T.,Utility,15,6,4,5,0,1,86,0,41,Lost — Partial
+CHM-1095,Conmorsum,Jinx,Advanced,Healing,17,6,3,6,0,0,76,1,5,Recovered
+CHM-1096,Alohomum,Charm,N.E.W.T.,Defensive,9,5,4,4,0,0,72,1,0,Recovered
+CHM-1097,Prioara,Hex,Beginner,Offensive,10,5,4,3,1,0,86,1,5,Recovered
+CHM-1098,Proserpendo,Hex,Intermediate,Healing,15,2,4,7,0,0,77,0,0,Lost — Partial
+CHM-1099,Prosanenia,Counter-Spell,Intermediate,Defensive,20,6,5,5,1,0,86,1,19,Recovered
+CHM-1100,Inseratus,Curse,Beginner,Offensive,11,5,4,5,0,0,56,1,13,Recovered
+CHM-1101,Instuorus,Charm,Intermediate,Offensive,20,7,4,5,0,0,36,1,1,Recovered
+CHM-1102,Destupium,Enchantment,Advanced,Offensive,12,6,4,5,0,0,67,1,15,Recovered
+CHM-1103,Lumosorus,Enchantment,Advanced,Utility,17,7,4,5,0,0,64,1,5,Recovered
+CHM-1104,Repaus,Curse,Arcane,Defensive,19,6,3,3,0,0,81,0,21,Lost — Partial
+CHM-1105,Condeletrificus,Enchantment,Intermediate,Offensive,20,4,6,9,0,0,77,0,74,Lost — Partial
+CHM-1106,Proum,Counter-Spell,Beginner,Offensive,14,3,2,3,0,0,57,1,10,Recovered
+CHM-1107,Dedeletificus,Hex,Advanced,Defensive,20,7,6,7,0,0,76,0,9,Lost — Partial
+CHM-1108,Conexpectorus,Enchantment,N.E.W.T.,Utility,18,2,5,8,0,0,71,1,1,Recovered
+CHM-1109,Persectuificus,Charm,N.E.W.T.,Utility,17,6,6,8,0,0,76,1,12,Recovered
+CHM-1110,Subpatara,Counter-Spell,N.E.W.T.,Defensive,20,7,4,5,1,0,65,0,30,Lost — Partial
+CHM-1111,Finorus,Jinx,Intermediate,Offensive,14,3,3,4,0,0,63,1,6,Recovered
+CHM-1112,Deoblivia,Counter-Spell,Arcane,Defensive,9,6,5,4,1,0,90,0,30,Lost — Partial
+CHM-1113,Episkium,Charm,Advanced,Healing,17,5,4,4,0,0,44,1,9,Recovered
+CHM-1114,Expectium,Enchantment,Arcane,Healing,14,2,4,5,0,0,100,1,10,Recovered
+CHM-1115,Accia,Counter-Spell,Beginner,Offensive,17,5,3,2,1,1,65,0,33,Lost — Partial
+CHM-1116,Perdeletara,Charm,N.E.W.T.,Utility,9,7,5,6,1,0,57,1,5,Recovered
+CHM-1117,Expectum,Charm,Beginner,Healing,17,7,3,5,0,0,32,1,4,Recovered
+CHM-1118,Deletrificus,Charm,Advanced,Healing,13,4,5,7,0,0,61,0,27,Lost — Partial
+CHM-1119,Demorsmoendo,Jinx,Arcane,Defensive,12,7,5,7,0,0,63,1,10,Recovered
+CHM-1120,Deexpum,Hex,Intermediate,Offensive,13,6,3,4,0,1,50,1,11,Recovered
+CHM-1121,Seria,Hex,Intermediate,Defensive,10,7,3,2,1,0,51,1,11,Recovered
+CHM-1122,Transincus,Jinx,Intermediate,Defensive,14,2,3,7,0,0,53,0,34,Lost — Partial
+CHM-1123,Repara,Charm,Advanced,Defensive,17,7,3,3,1,0,61,1,20,Recovered
+CHM-1124,Rebomendo,Charm,Beginner,Utility,12,7,4,5,0,0,25,0,79,Lost — Partial
+CHM-1125,Expectendo,Jinx,Intermediate,Offensive,13,3,4,6,0,0,70,1,13,Recovered
+CHM-1126,Conferum,Enchantment,Intermediate,Offensive,10,4,3,5,0,0,59,1,11,Recovered
+CHM-1127,Renoxara,Counter-Spell,N.E.W.T.,Utility,10,6,4,4,1,0,84,1,14,Recovered
+CHM-1128,Adfinorus,Hex,N.E.W.T.,Offensive,16,2,4,5,0,0,79,1,3,Recovered
+CHM-1129,Propatium,Charm,Intermediate,Offensive,16,5,4,5,0,0,60,1,20,Recovered
+CHM-1130,Conobliviium,Charm,Beginner,Defensive,14,2,6,6,0,1,68,1,16,Recovered
+CHM-1131,Conepiskeara,Jinx,Intermediate,Offensive,18,4,6,6,1,0,84,1,8,Recovered
+CHM-1132,Oblivendo,Curse,Advanced,Healing,20,2,4,5,0,0,78,1,11,Recovered
+CHM-1133,Noxorus,Counter-Spell,Intermediate,Transfiguration,9,6,3,4,0,0,45,1,10,Recovered
+CHM-1134,Transserporus,Charm,Beginner,Offensive,9,3,4,9,0,1,63,1,9,Recovered
+CHM-1135,Patronatus,Counter-Spell,Intermediate,Utility,11,6,4,6,0,0,66,0,0,Lost — Partial
+CHM-1136,Lumosus,Jinx,Advanced,Utility,20,5,3,4,0,0,40,0,15,Lost — Partial
+CHM-1137,Conobliendo,Hex,Advanced,Defensive,20,4,5,6,0,0,62,1,0,Recovered
+CHM-1138,Bombarum,Enchantment,Intermediate,Transfiguration,19,2,3,5,0,0,56,0,13,Lost — Partial
+CHM-1139,Deserpenorus,Hex,Intermediate,Offensive,20,5,5,7,0,0,71,0,75,Lost — Partial
+CHM-1140,Transriddikus,Counter-Spell,Beginner,Transfiguration,12,3,4,9,0,1,67,1,13,Recovered
+CHM-1141,Leviia,Charm,Intermediate,Healing,10,3,4,2,1,1,79,0,71,Lost — Partial
+CHM-1142,Winara,Curse,Beginner,Defensive,13,5,3,3,1,0,65,0,37,Lost — Partial
+CHM-1143,Noxum,Charm,Advanced,Healing,20,3,2,3,0,0,41,1,1,Recovered
+CHM-1144,Perprotificus,Counter-Spell,Beginner,Healing,10,6,5,8,0,0,49,1,3,Recovered
+CHM-1145,Serpium,Jinx,Advanced,Healing,9,4,3,4,0,0,80,0,76,Lost — Partial
+CHM-1146,Exexpeendo,Counter-Spell,Arcane,Transfiguration,16,7,5,5,0,1,71,1,1,Recovered
+CHM-1147,Submorsmous,Counter-Spell,Beginner,Defensive,15,2,4,7,0,0,59,1,19,Recovered
+CHM-1148,Exepiskeendo,Enchantment,Advanced,Defensive,17,2,6,6,0,1,79,1,6,Recovered
+CHM-1149,Ferium,Charm,Intermediate,Utility,19,2,3,3,0,0,73,1,10,Recovered
+CHM-1150,Inprioria,Counter-Spell,N.E.W.T.,Defensive,10,2,5,4,1,0,95,1,2,Recovered
+CHM-1151,Reoblendo,Charm,Beginner,Offensive,11,5,4,5,0,0,67,1,1,Recovered
+CHM-1152,Incantus,Charm,Beginner,Utility,11,5,3,5,0,0,53,1,9,Recovered
+CHM-1153,Expus,Curse,Advanced,Transfiguration,15,7,2,3,0,0,50,1,20,Recovered
+CHM-1154,Noxum,Counter-Spell,Beginner,Transfiguration,12,4,2,3,0,0,60,1,4,Recovered
+CHM-1155,Lumoara,Enchantment,Intermediate,Defensive,17,2,4,3,1,0,82,1,18,Recovered
+CHM-1156,Episkara,Counter-Spell,Intermediate,Utility,12,5,4,4,1,0,70,1,19,Recovered
+CHM-1157,Winorus,Counter-Spell,Intermediate,Healing,19,2,3,4,0,0,76,1,1,Recovered
+CHM-1158,Adferulatus,Enchantment,N.E.W.T.,Offensive,16,6,5,6,0,0,79,1,6,Recovered
+CHM-1159,Feruatus,Counter-Spell,Intermediate,Transfiguration,12,2,4,4,0,0,54,0,0,Lost — Partial
+CHM-1160,Sanentia,Hex,Advanced,Defensive,15,2,4,4,1,0,83,1,20,Recovered
+CHM-1161,Leviosatus,Curse,Intermediate,Offensive,18,3,5,5,0,0,75,1,15,Recovered
+CHM-1162,Vulnerum,Curse,Beginner,Offensive,12,7,3,5,0,0,59,0,28,Lost — Partial
+CHM-1163,Exvulnificus,Curse,Beginner,Healing,11,5,5,7,0,0,54,1,8,Recovered
+CHM-1164,Perincatus,Counter-Spell,Arcane,Offensive,17,4,4,6,0,0,80,0,46,Lost — Partial
+CHM-1165,Patroendo,Enchantment,Beginner,Offensive,19,2,4,5,0,0,73,1,7,Recovered
+CHM-1166,Inaccioara,Curse,Beginner,Healing,18,4,6,4,1,1,56,1,13,Recovered
+CHM-1167,Expectorus,Curse,N.E.W.T.,Healing,20,2,4,6,0,0,78,1,5,Recovered
+CHM-1168,Sectum,Jinx,Beginner,Healing,12,7,2,4,0,0,26,1,9,Recovered
+CHM-1169,Deexpecatus,Hex,Advanced,Defensive,16,7,5,6,0,1,51,1,14,Recovered
+CHM-1170,Oblificus,Enchantment,Beginner,Healing,11,3,4,5,0,0,65,1,2,Recovered
+CHM-1171,Exobliviara,Enchantment,Intermediate,Offensive,17,5,6,5,1,0,79,1,6,Recovered
+CHM-1172,Ferulaus,Jinx,Beginner,Transfiguration,19,2,4,4,0,0,57,1,14,Recovered
+CHM-1173,Oblus,Jinx,Advanced,Defensive,15,4,2,3,0,0,80,0,79,Lost — Partial
+CHM-1174,Prolevium,Jinx,Intermediate,Offensive,13,4,4,5,0,0,67,1,8,Recovered
+CHM-1175,Deepisia,Charm,Advanced,Healing,19,4,5,3,1,1,73,1,11,Recovered
+CHM-1176,Transridificus,Hex,Advanced,Healing,10,7,5,9,0,0,49,1,15,Recovered
+CHM-1177,Epiatus,Curse,Arcane,Offensive,12,2,4,3,0,0,93,1,7,Recovered
+CHM-1178,Accus,Curse,Intermediate,Healing,14,6,2,3,0,1,62,1,4,Recovered
+CHM-1179,Episkum,Curse,Beginner,Offensive,19,6,3,4,0,0,82,1,13,Recovered
+CHM-1180,Proferulendo,Counter-Spell,Intermediate,Transfiguration,12,2,5,7,0,0,73,0,80,Lost — Partial
+CHM-1181,Serpeificus,Enchantment,Intermediate,Utility,13,4,5,6,0,0,85,1,8,Recovered
+CHM-1182,Inalohoorus,Hex,Arcane,Transfiguration,14,6,6,5,0,1,88,1,13,Recovered
+CHM-1183,Patatus,Curse,Advanced,Transfiguration,17,3,3,4,0,0,84,0,45,Lost — Partial
+CHM-1184,Incaendo,Enchantment,Beginner,Transfiguration,17,7,4,4,0,0,47,1,3,Recovered
+CHM-1185,Lumosus,Counter-Spell,Beginner,Offensive,20,7,3,4,0,0,45,1,6,Recovered
+CHM-1186,Finiatus,Hex,Beginner,Transfiguration,11,2,4,4,0,0,50,0,9,Lost — Partial
+CHM-1187,Prium,Curse,Intermediate,Offensive,11,5,2,3,0,0,60,1,20,Recovered
+CHM-1188,Debombarium,Enchantment,Intermediate,Defensive,17,2,5,6,0,0,84,0,3,Lost — Partial
+CHM-1189,Ferulaara,Hex,Beginner,Defensive,12,6,5,4,1,1,85,0,65,Lost — Partial
+CHM-1190,Proendo,Hex,N.E.W.T.,Utility,16,2,3,4,0,0,69,1,17,Recovered
+CHM-1191,Sanatus,Hex,Intermediate,Defensive,11,5,3,4,0,0,59,1,18,Recovered
+CHM-1192,Reparoatus,Enchantment,N.E.W.T.,Offensive,14,6,5,5,0,0,82,1,2,Recovered
+CHM-1193,Exsaneum,Curse,Beginner,Offensive,20,4,4,4,0,0,68,1,4,Recovered
+CHM-1194,Adbombara,Curse,Beginner,Defensive,20,2,4,5,1,0,76,0,29,Lost — Partial
+CHM-1195,Proincania,Charm,Intermediate,Transfiguration,17,3,5,5,1,0,61,1,7,Recovered
+CHM-1196,Subaloara,Counter-Spell,N.E.W.T.,Healing,17,5,5,4,1,0,90,1,10,Recovered
+CHM-1197,Morsorus,Jinx,Advanced,Transfiguration,17,2,3,5,0,0,70,1,7,Recovered
+CHM-1198,Propriorara,Hex,Advanced,Offensive,19,5,5,6,1,0,89,1,4,Recovered
+CHM-1199,Vulnium,Charm,N.E.W.T.,Defensive,19,2,3,4,0,0,69,1,13,Recovered
+CHM-1200,Transrepaium,Charm,Beginner,Offensive,16,5,5,7,0,0,54,0,37,Lost — Partial
+CHM-1201,Noxificus,Hex,Arcane,Offensive,18,4,4,5,0,0,79,1,6,Recovered
+CHM-1202,Devulnara,Hex,Intermediate,Defensive,9,2,4,5,1,0,54,0,58,Lost — Partial
+CHM-1203,Exexpelus,Hex,Intermediate,Transfiguration,9,4,4,5,0,0,60,1,20,Recovered
+CHM-1204,Exproteificus,Jinx,Beginner,Defensive,18,6,6,7,0,0,55,0,11,Lost — Partial
+CHM-1205,Expendo,Enchantment,Beginner,Offensive,19,4,3,4,0,0,53,1,0,Recovered
+CHM-1206,Adbombaara,Enchantment,N.E.W.T.,Healing,14,6,5,5,1,1,57,1,14,Recovered
+CHM-1207,Noxia,Counter-Spell,Intermediate,Defensive,10,4,3,2,1,0,83,0,80,Lost — Partial
+CHM-1208,Leviosara,Hex,Beginner,Utility,20,4,5,4,1,0,71,1,20,Recovered
+CHM-1209,Inaloara,Jinx,Intermediate,Offensive,18,4,5,3,1,0,70,1,2,Recovered
+CHM-1210,Morsmoorus,Charm,N.E.W.T.,Healing,14,6,4,6,0,1,62,1,14,Recovered
+CHM-1211,Refiniatus,Charm,Beginner,Utility,14,7,5,5,0,0,66,0,61,Lost — Partial
+CHM-1212,Repara,Charm,Beginner,Utility,17,2,3,3,1,0,79,1,8,Recovered
+CHM-1213,Patroum,Enchantment,Intermediate,Transfiguration,17,4,3,4,0,0,59,1,0,Recovered
+CHM-1214,Adlevorus,Hex,Arcane,Healing,13,5,4,5,0,0,75,1,12,Recovered
+CHM-1215,Oblum,Curse,Intermediate,Transfiguration,11,5,2,3,0,0,65,0,39,Lost — Partial
+CHM-1216,Noxia,Jinx,Intermediate,Healing,10,7,3,2,1,0,80,1,3,Recovered
+CHM-1217,Inrepificus,Enchantment,Intermediate,Transfiguration,13,5,5,6,0,0,64,1,3,Recovered
+CHM-1218,Exoblatus,Jinx,Intermediate,Healing,11,3,4,5,0,0,69,0,23,Lost — Partial
+CHM-1219,Finiara,Charm,Beginner,Transfiguration,14,7,4,3,1,0,53,1,8,Recovered
+CHM-1220,Winatus,Charm,N.E.W.T.,Offensive,10,3,3,4,0,0,81,0,28,Lost — Partial
+CHM-1221,Consaneorus,Charm,Beginner,Utility,16,6,5,6,0,0,37,0,12,Lost — Partial
+CHM-1222,Pervulnerorus,Jinx,Arcane,Healing,11,3,5,8,0,0,100,1,7,Recovered
+CHM-1223,Revulneium,Counter-Spell,N.E.W.T.,Utility,13,3,5,5,0,0,92,1,18,Recovered
+CHM-1224,Riddikus,Jinx,Beginner,Defensive,13,5,3,5,0,1,53,1,17,Recovered
+CHM-1225,Pervulnium,Jinx,N.E.W.T.,Defensive,9,3,4,6,0,0,80,1,8,Recovered
+CHM-1226,Deoblivium,Enchantment,N.E.W.T.,Transfiguration,19,3,5,5,0,0,80,0,40,Lost — Partial
+CHM-1227,Exbombarium,Charm,Beginner,Defensive,10,7,5,6,0,0,38,1,15,Recovered
+CHM-1228,Adriddara,Jinx,Intermediate,Defensive,19,2,4,5,1,1,85,1,9,Recovered
+CHM-1229,Noxendo,Hex,Intermediate,Defensive,15,3,3,4,0,0,72,1,12,Recovered
+CHM-1230,Priorus,Counter-Spell,N.E.W.T.,Utility,15,3,3,4,0,0,63,1,3,Recovered
+CHM-1231,Morsia,Enchantment,Intermediate,Defensive,9,3,3,3,1,0,79,1,11,Recovered
+CHM-1232,Conlumosia,Curse,Arcane,Healing,20,7,5,5,1,0,100,1,13,Recovered
+CHM-1233,Lumosium,Charm,Advanced,Defensive,17,7,4,4,0,0,58,0,38,Lost — Partial
+CHM-1234,Adpriororus,Curse,Beginner,Transfiguration,9,7,5,6,0,0,63,0,10,Lost — Partial
+CHM-1235,Winendo,Jinx,N.E.W.T.,Defensive,15,3,3,4,0,0,61,1,14,Recovered
+CHM-1236,Conexpeificus,Hex,Advanced,Defensive,19,7,6,7,0,0,61,0,47,Lost — Partial
+CHM-1237,Repaatus,Enchantment,Beginner,Utility,20,6,4,4,0,1,44,1,2,Recovered
+CHM-1238,Subridorus,Curse,Intermediate,Offensive,19,5,4,6,0,0,63,1,15,Recovered
+CHM-1239,Noxatus,Curse,Beginner,Defensive,10,4,3,4,0,0,62,1,15,Recovered
+CHM-1240,Levorus,Enchantment,Beginner,Utility,13,4,3,4,0,0,57,0,32,Lost — Partial
+CHM-1241,Reexpellorus,Charm,Intermediate,Offensive,15,3,5,7,0,1,72,0,59,Lost — Partial
+CHM-1242,Resanentificus,Hex,Beginner,Healing,18,7,6,8,0,0,67,1,2,Recovered
+CHM-1243,Conwinara,Hex,N.E.W.T.,Transfiguration,14,2,4,5,1,0,94,0,59,Lost — Partial
+CHM-1244,Transdeletratus,Hex,Advanced,Transfiguration,13,4,5,10,0,0,91,1,13,Recovered
+CHM-1245,Restupefatus,Jinx,Intermediate,Offensive,9,3,5,7,0,0,77,1,16,Recovered
+CHM-1246,Protara,Jinx,Beginner,Transfiguration,11,6,3,4,1,0,52,0,60,Lost — Partial
+CHM-1247,Alohomatus,Hex,Arcane,Defensive,16,5,5,5,0,0,93,0,58,Lost — Partial
+CHM-1248,Stupendo,Enchantment,Beginner,Healing,11,6,3,5,0,0,57,1,0,Recovered
+CHM-1249,Lumosia,Curse,Beginner,Offensive,13,3,4,3,1,0,70,1,10,Recovered

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Pembrook Papers — Magical Analytics Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:       #0D0A1A;
+    --parchment:#1A1528;
+    --panel:    #130E24;
+    --panel2:   #1E1840;
+    --border:   #2D2550;
+    --text:     #E8E0F8;
+    --muted:    #7868A8;
+    --gold:     #FFD700;
+    --gold-dim: rgba(255,215,0,0.12);
+    --purple:   #9B59B6;
+    --purple-dim:rgba(155,89,182,0.15);
+    --green:    #2ECC71;
+    --green-dim:rgba(46,204,113,0.12);
+    --red:      #E74C3C;
+    --red-dim:  rgba(231,76,60,0.12);
+    --blue:     #3498DB;
+    --blue-dim: rgba(52,152,219,0.12);
+    --silver:   #BDC3C7;
+    --mono:     'IBM Plex Mono', monospace;
+    --serif:    'IM Fell English', serif;
+    --sans:     'IBM Plex Sans', sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Stars background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 15% 20%, rgba(255,255,255,0.6) 0%, transparent 100%),
+      radial-gradient(1px 1px at 45% 8%,  rgba(255,215,0,0.4)   0%, transparent 100%),
+      radial-gradient(1px 1px at 72% 35%, rgba(255,255,255,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 88% 12%, rgba(255,255,255,0.4) 0%, transparent 100%),
+      radial-gradient(1px 1px at 30% 55%, rgba(155,89,182,0.4)  0%, transparent 100%),
+      radial-gradient(1px 1px at 60% 70%, rgba(255,255,255,0.3) 0%, transparent 100%),
+      radial-gradient(1px 1px at 92% 55%, rgba(255,215,0,0.3)   0%, transparent 100%),
+      radial-gradient(2px 2px at 5%  85%, rgba(255,255,255,0.5) 0%, transparent 100%),
+      radial-gradient(1px 1px at 80% 90%, rgba(155,89,182,0.3)  0%, transparent 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Scanlines */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 3px,
+      rgba(0,0,0,0.06) 3px, rgba(0,0,0,0.06) 4px
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  header, .kpi-row, .main, .footer-box, footer {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: linear-gradient(135deg, #0D0A1A 0%, #1A1040 100%);
+    border-bottom: 2px solid var(--gold);
+    padding: 0 32px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-left { display: flex; align-items: center; gap: 16px; }
+
+  .wand-icon {
+    font-size: 28px;
+    filter: drop-shadow(0 0 8px rgba(255,215,0,0.6));
+    animation: wand-glow 3s ease-in-out infinite;
+  }
+
+  @keyframes wand-glow {
+    0%,100% { filter: drop-shadow(0 0 8px rgba(255,215,0,0.6)); }
+    50%      { filter: drop-shadow(0 0 16px rgba(255,215,0,0.9)); }
+  }
+
+  .header-title {
+    font-family: var(--serif);
+    font-size: 20px;
+    color: var(--gold);
+    letter-spacing: 0.03em;
+  }
+
+  .header-title span {
+    display: block;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-style: normal;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+  }
+
+  .header-right {
+    display: flex; gap: 20px; align-items: center;
+    font-family: var(--mono); font-size: 10px; color: var(--muted);
+  }
+
+  .classified-badge {
+    background: var(--red);
+    color: white;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 5px 12px;
+    border-radius: 2px;
+    animation: blink 3s ease-in-out infinite;
+  }
+
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.55} }
+
+  /* ── KPI ROW ── */
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .kpi {
+    background: var(--panel);
+    padding: 18px 22px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .kpi::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+
+  .kpi.gold::before   { background: var(--gold); }
+  .kpi.purple::before { background: var(--purple); }
+  .kpi.green::before  { background: var(--green); }
+  .kpi.red::before    { background: var(--red); }
+  .kpi.blue::before   { background: var(--blue); }
+
+  .kpi-label {
+    font-family: var(--mono);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 7px;
+  }
+
+  .kpi-value {
+    font-family: var(--mono);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .kpi.gold   .kpi-value { color: var(--gold); }
+  .kpi.purple .kpi-value { color: var(--purple); }
+  .kpi.green  .kpi-value { color: var(--green); }
+  .kpi.red    .kpi-value { color: var(--red); }
+  .kpi.blue   .kpi-value { color: var(--blue); }
+
+  .kpi-sub { font-size: 11px; color: var(--muted); }
+
+  /* ── MAIN GRID ── */
+  .main {
+    padding: 20px 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+  }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .panel.span2 { grid-column: span 2; }
+  .panel.span3 { grid-column: span 3; }
+
+  .panel-header {
+    padding: 11px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--panel2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .panel-number {
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-right: 8px;
+  }
+
+  .panel-title {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--text);
+  }
+
+  .panel-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  .panel-body { padding: 16px; }
+
+  canvas { max-height: 220px; }
+
+  /* ── FINDING CARDS ── */
+  .findings { padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+
+  .finding {
+    display: flex;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 3px;
+    border-left: 3px solid;
+    font-size: 12px;
+  }
+
+  .finding.gold   { border-color: var(--gold);   background: var(--gold-dim); }
+  .finding.purple { border-color: var(--purple);  background: var(--purple-dim); }
+  .finding.green  { border-color: var(--green);   background: var(--green-dim); }
+  .finding.red    { border-color: var(--red);     background: var(--red-dim); }
+  .finding.blue   { border-color: var(--blue);    background: var(--blue-dim); }
+
+  .finding-num {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 1px 6px;
+    border-radius: 2px;
+    background: rgba(0,0,0,0.3);
+    height: fit-content;
+    margin-top: 1px;
+  }
+
+  .finding.gold   .finding-num { color: var(--gold); }
+  .finding.purple .finding-num { color: var(--purple); }
+  .finding.green  .finding-num { color: var(--green); }
+  .finding.red    .finding-num { color: var(--red); }
+  .finding.blue   .finding-num { color: var(--blue); }
+
+  .finding-text { color: var(--text); }
+  .finding-note {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 3px;
+    font-style: italic;
+  }
+
+  /* ── CHARM TABLE ── */
+  .charm-table { width:100%; border-collapse:collapse; font-size:11px; }
+  .charm-table th {
+    padding: 7px 10px;
+    background: var(--panel2);
+    border-bottom: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+  }
+  .charm-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid rgba(45,37,80,0.5);
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+  .charm-table tr:hover td { background: rgba(155,89,182,0.1); }
+
+  .eff-bar {
+    height: 5px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+  .eff-fill { height: 100%; border-radius: 2px; }
+
+  /* ── INCIDENT TIMELINE ── */
+  .incident-list { padding: 12px 16px; max-height: 280px; overflow-y: auto;
+    scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
+
+  .incident-row {
+    display: flex; gap: 10px; padding: 8px 0;
+    border-bottom: 1px solid rgba(45,37,80,0.5);
+    align-items: flex-start;
+  }
+  .incident-row:last-child { border-bottom: none; }
+
+  .inc-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; margin-top:4px; }
+  .inc-year { font-family:var(--mono); font-size:10px; color:var(--muted); min-width:36px; margin-top:2px; }
+  .inc-text { font-size:11px; }
+  .inc-count { font-family:var(--mono); font-size:10px; color:var(--muted); margin-top:2px; }
+
+  /* ── PEMBROOK NOTE ── */
+  .footer-box {
+    margin: 0 28px 20px;
+    background: var(--parchment);
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    padding: 16px 22px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .footer-box-icon { font-size: 24px; flex-shrink:0; }
+
+  .footer-box-title {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--gold);
+    margin-bottom: 5px;
+  }
+
+  .footer-box-text {
+    font-family: var(--serif);
+    font-size: 13px;
+    color: var(--silver);
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 12px 28px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-left">
+    <div class="wand-icon">🪄</div>
+    <div class="header-title">
+      The Pembrook Papers
+      <span>MINISTRY OF MAGIC · DEPT. OF MAGICAL RECORDS · EYES ONLY · GLAMOUR CHARM ACTIVE</span>
+    </div>
+  </div>
+  <div class="header-right">
+    <span>R. PEMBROOK, SR. ARCHIVIST</span>
+    <span>RAVENCLAW · CLASS OF 1991</span>
+    <span>SYCAMORE · UNICORN HAIR · 14" · VERY FLEXIBLE</span>
+    <div class="classified-badge">⚡ CLASSIFIED</div>
+  </div>
+</header>
+
+<!-- KPI ROW -->
+<div class="kpi-row">
+  <div class="kpi gold">
+    <div class="kpi-label">Charms Analysed</div>
+    <div class="kpi-value">250</div>
+    <div class="kpi-sub">172 recovered · 78 lost</div>
+  </div>
+  <div class="kpi purple">
+    <div class="kpi-label">Potions Logged</div>
+    <div class="kpi-value">500</div>
+    <div class="kpi-sub">315 successful (63%)</div>
+  </div>
+  <div class="kpi red">
+    <div class="kpi-label">Dark Arts Incidents</div>
+    <div class="kpi-value">2,777</div>
+    <div class="kpi-sub">1990–2024 · 34 anomalies</div>
+  </div>
+  <div class="kpi green">
+    <div class="kpi-label">Alchemy Attempts</div>
+    <div class="kpi-value">300</div>
+    <div class="kpi-sub">68 successful (23%)</div>
+  </div>
+  <div class="kpi blue">
+    <div class="kpi-label">Herbs Clustered</div>
+    <div class="kpi-value">30</div>
+    <div class="kpi-sub">4 functional groups found</div>
+  </div>
+</div>
+
+<!-- MAIN GRID -->
+<div class="main">
+
+  <!-- PANEL 1: Charm recovery feature importance -->
+  <div class="panel">
+    <div class="panel-header">
+      <div><span class="panel-number">I.</span><span class="panel-title">Lost Charm Recovery</span></div>
+      <div class="panel-meta">Random Forest · R²≈0.72</div>
+    </div>
+    <div class="panel-body">
+      <canvas id="charmFeatChart"></canvas>
+    </div>
+  </div>
+
+  <!-- PANEL 2: Top lost charms to reconstruct -->
+  <div class="panel">
+    <div class="panel-header">
+      <div><span class="panel-number">I.</span><span class="panel-title">Reconstruction Candidates</span></div>
+      <div class="panel-meta">Predicted effectiveness ≥ 70</div>
+    </div>
+    <div class="panel-body" style="padding:0">
+      <table class="charm-table">
+        <thead>
+          <tr><th>Incantation</th><th>Category</th><th>Predicted Eff.</th></tr>
+        </thead>
+        <tbody id="charmBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- PANEL 3: Herbology clusters -->
+  <div class="panel">
+    <div class="panel-header">
+      <div><span class="panel-number">II.</span><span class="panel-title">Herbology Clusters</span></div>
+      <div class="panel-meta">K-Means · k=4</div>
+    </div>
+    <div class="panel-body">
+      <canvas id="herbChart"></canvas>
+    </div>
+  </div>
+
+  <!-- PANEL 4: Dark arts time series (full width) -->
+  <div class="panel span3">
+    <div class="panel-header">
+      <div><span class="panel-number">III.</span><span class="panel-title">Dark Arts Incident Detection — Annual Trend (1990–2024)</span></div>
+      <div class="panel-meta">Z-score anomaly detection · Gold = flagged anomaly years</div>
+    </div>
+    <div class="panel-body">
+      <canvas id="darkChart"></canvas>
+    </div>
+  </div>
+
+  <!-- PANEL 5: Potions success by level -->
+  <div class="panel">
+    <div class="panel-header">
+      <div><span class="panel-number">IV.</span><span class="panel-title">Potions Success Rates</span></div>
+      <div class="panel-meta">74% model accuracy</div>
+    </div>
+    <div class="panel-body">
+      <canvas id="potionsChart"></canvas>
+    </div>
+  </div>
+
+  <!-- PANEL 6: Alchemy stone analysis -->
+  <div class="panel">
+    <div class="panel-header">
+      <div><span class="panel-number">V.</span><span class="panel-title">Alchemy — Stone vs No Stone</span></div>
+      <div class="panel-meta">Logistic regression · 81% accuracy</div>
+    </div>
+    <div class="panel-body">
+      <canvas id="alchemyChart"></canvas>
+    </div>
+  </div>
+
+  <!-- PANEL 7: Key findings -->
+  <div class="panel">
+    <div class="panel-header">
+      <div><span class="panel-number">✦</span><span class="panel-title">Pembrook's Findings</span></div>
+      <div class="panel-meta">Summary · 5 analyses</div>
+    </div>
+    <div class="findings" id="findings"></div>
+  </div>
+
+</div>
+
+<!-- PEMBROOK'S NOTE -->
+<div class="footer-box">
+  <div class="footer-box-icon">📜</div>
+  <div>
+    <div class="footer-box-title">Archivist's Note — R. Pembrook</div>
+    <div class="footer-box-text">
+      "On 14 March 2019, a Muggle-born intern left a device in the break room. My wand had nearly combusted twice that month filing Floo Network reports.
+      Fourteen hours later I had installed something called Python. My wand glowed warmly for the first time in eleven years. If this notebook is discovered,
+      I will claim I was cataloguing insects. The findings, however, are real."
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span>The Pembrook Papers · Ministry of Magic, Dept. of Magical Records · Glamour Charm Active · This document does not exist</span>
+  <span>Real analysis. Fictional wizard. github.com/chooseyourtacoday · Python · scikit-learn · pandas</span>
+</footer>
+
+<script>
+Chart.defaults.color = '#7868A8';
+Chart.defaults.borderColor = '#2D2550';
+Chart.defaults.font.family = "'IBM Plex Mono', monospace";
+Chart.defaults.font.size = 11;
+
+const TT = {
+  backgroundColor: '#1E1840',
+  borderColor: '#2D2550',
+  borderWidth: 1,
+  titleColor: '#E8E0F8',
+  bodyColor: '#9B89C8',
+  padding: 10,
+  cornerRadius: 3,
+};
+
+// ── CHART 1: Charm feature importance ─────────────────────────────────────────
+new Chart(document.getElementById('charmFeatChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Vowel Count', 'Syllables', 'Ends in A', 'Consonants', 'Double Letter'],
+    datasets: [{
+      label: 'Feature Importance',
+      data: [0.31, 0.26, 0.21, 0.14, 0.08],
+      backgroundColor: ['#FFD700','#9B59B6','#2ECC71','#3498DB','#E74C3C'],
+      borderWidth: 0,
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: { ...TT, callbacks: { label: ctx => ` Importance: ${ctx.raw.toFixed(2)}` } }
+    },
+    scales: {
+      x: { grid: { color:'rgba(45,37,80,0.4)' } },
+      y: { grid: { color:'rgba(45,37,80,0.4)' }, ticks: { callback: v => v.toFixed(2) } }
+    }
+  }
+});
+
+// ── CHARM TABLE ────────────────────────────────────────────────────────────────
+const charms = [
+  {incantation:'Luminorvus',  cat:'Charm',       eff:94},
+  {incantation:'Protegara',   cat:'Counter-Spell',eff:91},
+  {incantation:'Revelius',    cat:'Enchantment',  eff:88},
+  {incantation:'Expelius',    cat:'Charm',        eff:86},
+  {incantation:'Sanarius',    cat:'Healing',      eff:84},
+  {incantation:'Deflectara',  cat:'Counter-Spell',eff:82},
+  {incantation:'Incantifus',  cat:'Charm',        eff:79},
+  {incantation:'Restitorum',  cat:'Enchantment',  eff:77},
+];
+
+const tbody = document.getElementById('charmBody');
+charms.forEach(c => {
+  const color = c.eff >= 90 ? '#FFD700' : c.eff >= 85 ? '#9B59B6' : '#3498DB';
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td style="color:#E8E0F8;font-style:italic">${c.incantation}</td>
+    <td style="color:var(--muted)">${c.cat}</td>
+    <td>
+      <span style="color:${color};font-weight:700">${c.eff}</span>
+      <span class="eff-bar"><span class="eff-fill" style="width:${c.eff}%;background:${color}"></span></span>
+    </td>
+  `;
+  tbody.appendChild(row);
+});
+
+// ── CHART 2: Herbology clusters bubble ────────────────────────────────────────
+new Chart(document.getElementById('herbChart'), {
+  type: 'bubble',
+  data: {
+    datasets: [
+      {
+        label: 'Benign & Common',
+        data: [{x:0.25,y:0.12,r:12},{x:0.30,y:0.08,r:10},{x:0.20,y:0.15,r:8}],
+        backgroundColor: 'rgba(46,204,113,0.6)', borderColor:'#2ECC71',
+      },
+      {
+        label: 'Lunar-Sensitive',
+        data: [{x:0.65,y:0.25,r:11},{x:0.72,y:0.20,r:9},{x:0.60,y:0.30,r:8}],
+        backgroundColor: 'rgba(52,152,219,0.6)', borderColor:'#3498DB',
+      },
+      {
+        label: 'High Potency / Dangerous',
+        data: [{x:0.82,y:0.75,r:14},{x:0.90,y:0.85,r:12},{x:0.75,y:0.70,r:10}],
+        backgroundColor: 'rgba(231,76,60,0.6)', borderColor:'#E74C3C',
+      },
+      {
+        label: 'Rare & Complex',
+        data: [{x:0.88,y:0.45,r:16},{x:0.92,y:0.55,r:13}],
+        backgroundColor: 'rgba(255,215,0,0.6)', borderColor:'#FFD700',
+      },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position:'bottom', labels:{ font:{size:9}, boxWidth:10 } },
+      tooltip: { ...TT }
+    },
+    scales: {
+      x: { title:{display:true,text:'Magical Potency',color:'var(--muted)'}, grid:{color:'rgba(45,37,80,0.4)'}, min:0, max:1 },
+      y: { title:{display:true,text:'Toxicity',color:'var(--muted)'}, grid:{color:'rgba(45,37,80,0.4)'}, min:0, max:1 },
+    }
+  }
+});
+
+// ── CHART 3: Dark arts annual trend ───────────────────────────────────────────
+const years = Array.from({length:35}, (_,i) => 1990+i);
+const incidents = [28,31,34,29,38,52,74,98,112,68,42,38,35,32,30,29,28,31,27,26,29,32,35,38,34,31,29,35,38,42,45,48,52,58,62];
+const anomalyYears = [1995,1996,1997,1998];
+
+new Chart(document.getElementById('darkChart'), {
+  type: 'bar',
+  data: {
+    labels: years,
+    datasets: [
+      {
+        label: 'Total Incidents',
+        data: incidents,
+        backgroundColor: years.map(y => anomalyYears.includes(y) ? 'rgba(255,215,0,0.8)' : 'rgba(231,76,60,0.5)'),
+        borderColor:      years.map(y => anomalyYears.includes(y) ? '#FFD700' : '#E74C3C'),
+        borderWidth: 1,
+        borderRadius: 2,
+      },
+      {
+        label: 'Anomaly Threshold (2.5σ)',
+        data: new Array(35).fill(68),
+        type: 'line',
+        borderColor: 'rgba(255,215,0,0.7)',
+        borderWidth: 1.5,
+        borderDash: [6,3],
+        pointRadius: 0,
+        fill: false,
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position:'top', labels:{ font:{size:10}, usePointStyle:true } },
+      tooltip: {
+        ...TT,
+        callbacks: {
+          label: ctx => ` ${ctx.dataset.label}: ${ctx.raw} ${ctx.datasetIndex===0 ? 'incidents':''}`,
+          afterBody: (items) => {
+            const year = parseInt(items[0].label);
+            if (anomalyYears.includes(year)) return ['⚡ ANOMALY FLAGGED'];
+          }
+        }
+      }
+    },
+    scales: {
+      x: { grid:{color:'rgba(45,37,80,0.3)'}, ticks:{maxRotation:45, font:{size:9}} },
+      y: { grid:{color:'rgba(45,37,80,0.3)'}, title:{display:true,text:'Incidents',color:'var(--muted)'} }
+    }
+  }
+});
+
+// ── CHART 4: Potions success by level + ingredient quality ────────────────────
+new Chart(document.getElementById('potionsChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Student', 'N.E.W.T.', 'Auror', 'Master'],
+    datasets: [
+      { label:'Poor Ingredients',        data:[0.28,0.45,0.58,0.75], backgroundColor:'rgba(231,76,60,0.7)',   borderRadius:3 },
+      { label:'Standard Ingredients',    data:[0.45,0.62,0.75,0.90], backgroundColor:'rgba(52,152,219,0.7)',  borderRadius:3 },
+      { label:'Exceptional Ingredients', data:[0.62,0.78,0.88,0.97], backgroundColor:'rgba(255,215,0,0.7)',   borderRadius:3 },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position:'bottom', labels:{ font:{size:9}, boxWidth:10 } },
+      tooltip: { ...TT, callbacks:{ label: ctx => ` ${ctx.dataset.label}: ${(ctx.raw*100).toFixed(0)}%` } }
+    },
+    scales: {
+      x: { grid:{color:'rgba(45,37,80,0.3)'} },
+      y: {
+        grid:{color:'rgba(45,37,80,0.3)'},
+        min:0, max:1,
+        ticks:{ callback: v => `${(v*100).toFixed(0)}%` }
+      }
+    }
+  }
+});
+
+// ── CHART 5: Alchemy stone comparison ─────────────────────────────────────────
+new Chart(document.getElementById('alchemyChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Apprentice', 'Journeyman', 'Adept', 'Grand Master'],
+    datasets: [
+      { label:'No Stone',      data:[0.02,0.08,0.22,0.55], backgroundColor:'rgba(189,195,199,0.6)', borderRadius:3 },
+      { label:'Replica Stone', data:[0.17,0.23,0.37,0.70], backgroundColor:'rgba(52,152,219,0.6)',  borderRadius:3 },
+      { label:'Genuine Stone', data:[0.42,0.55,0.65,0.95], backgroundColor:'rgba(255,215,0,0.8)',   borderRadius:3 },
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { position:'bottom', labels:{ font:{size:9}, boxWidth:10 } },
+      tooltip: { ...TT, callbacks:{ label: ctx => ` ${ctx.dataset.label}: ${(ctx.raw*100).toFixed(0)}%` } },
+    },
+    scales: {
+      x: { grid:{color:'rgba(45,37,80,0.3)'} },
+      y: {
+        grid:{color:'rgba(45,37,80,0.3)'},
+        min:0, max:1,
+        ticks:{ callback: v => `${(v*100).toFixed(0)}%` }
+      }
+    }
+  }
+});
+
+// ── FINDINGS ──────────────────────────────────────────────────────────────────
+const FINDINGS = [
+  { color:'gold',   num:'I',   title:'Lost Charms',
+    text:'Vowel count & terminal phoneme predict effectiveness. 28 lost charms worth reconstructing.',
+    note:'Flitwick would have a field day with this. He also must never know.' },
+  { color:'blue',   num:'II',  title:'Herbology',
+    text:'4 natural clusters emerge. High potency correlates strongly with toxicity (r≈0.71).',
+    note:'Statistics is not always surprising.' },
+  { color:'red',    num:'III', title:'Dark Arts',
+    text:'Statistical model flags 1995–97 rise ~6 months earlier than owl-post network.',
+    note:'I intend to show this to the Auror Office. I have not yet worked up the courage.' },
+  { color:'purple', num:'IV',  title:'Potions',
+    text:'Brewer skill & ingredient quality drive 60% of predictive importance.',
+    note:'Snape was right about talent. I am choosing not to tell him.' },
+  { color:'green',  num:'V',   title:'Alchemy',
+    text:'Grand Masters without a Stone outperform Apprentices with one. Stone is a multiplier.',
+    note:'This will not be popular at the Alchemical Symposium.' },
+];
+
+const findingsDiv = document.getElementById('findings');
+FINDINGS.forEach(f => {
+  const div = document.createElement('div');
+  div.className = `finding ${f.color}`;
+  div.innerHTML = `
+    <span class="finding-num">${f.num}</span>
+    <div>
+      <div class="finding-text"><strong>${f.title}:</strong> ${f.text}</div>
+      <div class="finding-note">— ${f.note}</div>
+    </div>
+  `;
+  findingsDiv.appendChild(div);
+});
+</script>
+</body>
+</html>
