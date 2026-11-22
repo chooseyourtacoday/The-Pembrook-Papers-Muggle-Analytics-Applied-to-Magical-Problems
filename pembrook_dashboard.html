@@ -218,6 +218,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
   }
 
   .panel-number {
@@ -229,6 +230,8 @@
     margin-right: 8px;
   }
 
+  .panel-header > div:first-child { min-width: 0; }
+
   .panel-title {
     font-family: var(--serif);
     font-size: 13px;
@@ -239,6 +242,9 @@
     font-family: var(--mono);
     font-size: 10px;
     color: var(--muted);
+    flex: 0 1 46%;
+    text-align: right;
+    line-height: 1.35;
   }
 
   .panel-body { padding: 16px; }
@@ -413,7 +419,7 @@
   <div class="kpi red">
     <div class="kpi-label">Dark Arts Incidents</div>
     <div class="kpi-value">2,777</div>
-    <div class="kpi-sub">1990–2024 · 34 anomalies</div>
+    <div class="kpi-sub">1990–2024 · 16 anomaly months</div>
   </div>
   <div class="kpi green">
     <div class="kpi-label">Alchemy Attempts</div>
@@ -423,7 +429,7 @@
   <div class="kpi blue">
     <div class="kpi-label">Herbs Clustered</div>
     <div class="kpi-value">30</div>
-    <div class="kpi-sub">4 functional groups found</div>
+    <div class="kpi-sub">k=4, named by potency</div>
   </div>
 </div>
 
@@ -434,7 +440,7 @@
   <div class="panel">
     <div class="panel-header">
       <div><span class="panel-number">I.</span><span class="panel-title">Lost Charm Recovery</span></div>
-      <div class="panel-meta">Random Forest · R²≈0.72</div>
+      <div class="panel-meta">Random Forest · R² = −0.244</div>
     </div>
     <div class="panel-body">
       <canvas id="charmFeatChart"></canvas>
@@ -444,8 +450,8 @@
   <!-- PANEL 2: Top lost charms to reconstruct -->
   <div class="panel">
     <div class="panel-header">
-      <div><span class="panel-number">I.</span><span class="panel-title">Reconstruction Candidates</span></div>
-      <div class="panel-meta">Predicted effectiveness ≥ 70</div>
+      <div><span class="panel-number">I.</span><span class="panel-title">Highest Model Scores</span></div>
+      <div class="panel-meta">Predicted ≥ 70 · 30 of 78 · R² = −0.244</div>
     </div>
     <div class="panel-body" style="padding:0">
       <table class="charm-table">
@@ -472,7 +478,7 @@
   <div class="panel span3">
     <div class="panel-header">
       <div><span class="panel-number">III.</span><span class="panel-title">Dark Arts Incident Detection — Annual Trend (1990–2024)</span></div>
-      <div class="panel-meta">Z-score anomaly detection · Gold = flagged anomaly years</div>
+      <div class="panel-meta">Gold years hold all 16 months with z &gt; 2.5</div>
     </div>
     <div class="panel-body">
       <canvas id="darkChart"></canvas>
@@ -483,7 +489,7 @@
   <div class="panel">
     <div class="panel-header">
       <div><span class="panel-number">IV.</span><span class="panel-title">Potions Success Rates</span></div>
-      <div class="panel-meta">74% model accuracy</div>
+      <div class="panel-meta">67% accuracy · 3 pts above always-success</div>
     </div>
     <div class="panel-body">
       <canvas id="potionsChart"></canvas>
@@ -493,8 +499,8 @@
   <!-- PANEL 6: Alchemy stone analysis -->
   <div class="panel">
     <div class="panel-header">
-      <div><span class="panel-number">V.</span><span class="panel-title">Alchemy — Stone vs No Stone</span></div>
-      <div class="panel-meta">Logistic regression · 81% accuracy</div>
+      <div><span class="panel-number">V.</span><span class="panel-title">Alchemy — Level × Stone</span></div>
+      <div class="panel-meta">82% accuracy · predicts failure every time</div>
     </div>
     <div class="panel-body">
       <canvas id="alchemyChart"></canvas>
@@ -551,10 +557,10 @@ const TT = {
 new Chart(document.getElementById('charmFeatChart'), {
   type: 'bar',
   data: {
-    labels: ['Vowel Count', 'Syllables', 'Ends in A', 'Consonants', 'Double Letter'],
+    labels: ['Syllable Count', 'Vowel Count', 'Consonants', 'Ends in A', 'Double Letter'],
     datasets: [{
       label: 'Feature Importance',
-      data: [0.31, 0.26, 0.21, 0.14, 0.08],
+      data: [0.338, 0.248, 0.195, 0.137, 0.082],
       backgroundColor: ['#FFD700','#9B59B6','#2ECC71','#3498DB','#E74C3C'],
       borderWidth: 0,
       borderRadius: 3,
@@ -575,19 +581,17 @@ new Chart(document.getElementById('charmFeatChart'), {
 
 // ── CHARM TABLE ────────────────────────────────────────────────────────────────
 const charms = [
-  {incantation:'Luminorvus',  cat:'Charm',       eff:94},
-  {incantation:'Protegara',   cat:'Counter-Spell',eff:91},
-  {incantation:'Revelius',    cat:'Enchantment',  eff:88},
-  {incantation:'Expelius',    cat:'Charm',        eff:86},
-  {incantation:'Sanarius',    cat:'Healing',      eff:84},
-  {incantation:'Deflectara',  cat:'Counter-Spell',eff:82},
-  {incantation:'Incantifus',  cat:'Charm',        eff:79},
-  {incantation:'Restitorum',  cat:'Enchantment',  eff:77},
+  {incantation:'Debombarium',  cat:'Enchantment',   eff:83.6},
+  {incantation:'Bombaificus',  cat:'Enchantment',   eff:83.6},
+  {incantation:'Suboblivatus', cat:'Jinx',          eff:83.0},
+  {incantation:'Proferulendo', cat:'Counter-Spell', eff:83.0},
+  {incantation:'Deferuia',     cat:'Curse',         eff:81.7},
+  {incantation:'Deoblivium',   cat:'Enchantment',   eff:81.4},
 ];
 
 const tbody = document.getElementById('charmBody');
 charms.forEach(c => {
-  const color = c.eff >= 90 ? '#FFD700' : c.eff >= 85 ? '#9B59B6' : '#3498DB';
+  const color = c.eff >= 83 ? '#FFD700' : c.eff >= 82 ? '#9B59B6' : '#3498DB';
   const row = document.createElement('tr');
   row.innerHTML = `
     <td style="color:#E8E0F8;font-style:italic">${c.incantation}</td>
@@ -607,23 +611,57 @@ new Chart(document.getElementById('herbChart'), {
     datasets: [
       {
         label: 'Benign & Common',
-        data: [{x:0.25,y:0.12,r:12},{x:0.30,y:0.08,r:10},{x:0.20,y:0.15,r:8}],
-        backgroundColor: 'rgba(46,204,113,0.6)', borderColor:'#2ECC71',
+        data: [
+          {x:0.334,y:0.201,r:5,name:'Alihotsy'},
+          {x:0.550,y:0.230,r:5,name:'Bitterroot'},
+          {x:0.284,y:0.139,r:5,name:'Bloodroot'},
+          {x:0.545,y:0.088,r:5,name:'Fanged Geranium'},
+          {x:0.234,y:0.161,r:5,name:'Horned Slug'},
+          {x:0.388,y:0.253,r:5,name:'Lacewing Flies'},
+          {x:0.205,y:0.264,r:5,name:'Mimbulus Mimbletonia'},
+          {x:0.501,y:0.270,r:5,name:'Shrivelfig'},
+        ],
+        backgroundColor: 'rgba(46,204,113,0.75)', borderColor:'#2ECC71',
       },
       {
         label: 'Lunar-Sensitive',
-        data: [{x:0.65,y:0.25,r:11},{x:0.72,y:0.20,r:9},{x:0.60,y:0.30,r:8}],
-        backgroundColor: 'rgba(52,152,219,0.6)', borderColor:'#3498DB',
+        data: [
+          {x:0.436,y:0.156,r:5,name:'Bicorn Horn'},
+          {x:0.853,y:0.238,r:5,name:'Chinese Chomping Cabbage'},
+          {x:0.677,y:0.210,r:5,name:"Devil's Snare"},
+          {x:0.702,y:0.122,r:5,name:'Gillyweed'},
+          {x:0.513,y:0.080,r:5,name:'Knotgrass'},
+          {x:0.632,y:0.015,r:5,name:'Mandrake'},
+          {x:0.347,y:0.043,r:5,name:'Moonflower'},
+          {x:0.367,y:0.097,r:5,name:'Nettles'},
+          {x:0.234,y:0.122,r:5,name:'Puffapod'},
+          {x:0.492,y:0.200,r:5,name:'Sopophorous Bean'},
+        ],
+        backgroundColor: 'rgba(52,152,219,0.75)', borderColor:'#3498DB',
       },
       {
         label: 'High Potency / Dangerous',
-        data: [{x:0.82,y:0.75,r:14},{x:0.90,y:0.85,r:12},{x:0.75,y:0.70,r:10}],
-        backgroundColor: 'rgba(231,76,60,0.6)', borderColor:'#E74C3C',
+        data: [
+          {x:0.580,y:0.880,r:6,name:'Aconite'},
+          {x:0.749,y:0.679,r:6,name:'Belladonna'},
+        ],
+        backgroundColor: 'rgba(231,76,60,0.8)', borderColor:'#E74C3C',
       },
       {
         label: 'Rare & Complex',
-        data: [{x:0.88,y:0.45,r:16},{x:0.92,y:0.55,r:13}],
-        backgroundColor: 'rgba(255,215,0,0.6)', borderColor:'#FFD700',
+        data: [
+          {x:0.949,y:0.070,r:5,name:'Asphodel'},
+          {x:0.650,y:0.044,r:5,name:'Boomslang'},
+          {x:0.989,y:0.039,r:5,name:'Bubotuber'},
+          {x:0.688,y:0.054,r:5,name:'Dittany'},
+          {x:0.960,y:0.279,r:5,name:'Flobberworm'},
+          {x:0.824,y:0.046,r:5,name:'Fluxweed'},
+          {x:0.982,y:0.229,r:5,name:'Honking Daffodil'},
+          {x:0.766,y:0.199,r:5,name:'Screechsnap'},
+          {x:0.801,y:0.109,r:5,name:'Venomous Tentacula'},
+          {x:0.899,y:0.036,r:5,name:'Wormwood'},
+        ],
+        backgroundColor: 'rgba(255,215,0,0.75)', borderColor:'#FFD700',
       },
     ]
   },
@@ -631,7 +669,12 @@ new Chart(document.getElementById('herbChart'), {
     responsive: true,
     plugins: {
       legend: { position:'bottom', labels:{ font:{size:9}, boxWidth:10 } },
-      tooltip: { ...TT }
+      tooltip: {
+        ...TT,
+        callbacks: {
+          label: ctx => ` ${ctx.raw.name}: potency ${ctx.raw.x.toFixed(2)}, toxicity ${ctx.raw.y.toFixed(2)}`
+        }
+      }
     },
     scales: {
       x: { title:{display:true,text:'Magical Potency',color:'var(--muted)'}, grid:{color:'rgba(45,37,80,0.4)'}, min:0, max:1 },
@@ -642,7 +685,7 @@ new Chart(document.getElementById('herbChart'), {
 
 // ── CHART 3: Dark arts annual trend ───────────────────────────────────────────
 const years = Array.from({length:35}, (_,i) => 1990+i);
-const incidents = [28,31,34,29,38,52,74,98,112,68,42,38,35,32,30,29,28,31,27,26,29,32,35,38,34,31,29,35,38,42,45,48,52,58,62];
+const incidents = [65,65,61,50,57,170,169,164,197,71,57,54,57,61,53,58,63,63,71,68,61,44,55,69,61,63,53,62,55,105,88,96,99,102,90];
 const anomalyYears = [1995,1996,1997,1998];
 
 new Chart(document.getElementById('darkChart'), {
@@ -657,16 +700,6 @@ new Chart(document.getElementById('darkChart'), {
         borderColor:      years.map(y => anomalyYears.includes(y) ? '#FFD700' : '#E74C3C'),
         borderWidth: 1,
         borderRadius: 2,
-      },
-      {
-        label: 'Anomaly Threshold (2.5σ)',
-        data: new Array(35).fill(68),
-        type: 'line',
-        borderColor: 'rgba(255,215,0,0.7)',
-        borderWidth: 1.5,
-        borderDash: [6,3],
-        pointRadius: 0,
-        fill: false,
       }
     ]
   },
@@ -680,7 +713,7 @@ new Chart(document.getElementById('darkChart'), {
           label: ctx => ` ${ctx.dataset.label}: ${ctx.raw} ${ctx.datasetIndex===0 ? 'incidents':''}`,
           afterBody: (items) => {
             const year = parseInt(items[0].label);
-            if (anomalyYears.includes(year)) return ['⚡ ANOMALY FLAGGED'];
+            if (anomalyYears.includes(year)) return ['Contains months with z > 2.5'];
           }
         }
       }
@@ -698,9 +731,10 @@ new Chart(document.getElementById('potionsChart'), {
   data: {
     labels: ['Student', 'N.E.W.T.', 'Auror', 'Master'],
     datasets: [
-      { label:'Poor Ingredients',        data:[0.28,0.45,0.58,0.75], backgroundColor:'rgba(231,76,60,0.7)',   borderRadius:3 },
-      { label:'Standard Ingredients',    data:[0.45,0.62,0.75,0.90], backgroundColor:'rgba(52,152,219,0.7)',  borderRadius:3 },
-      { label:'Exceptional Ingredients', data:[0.62,0.78,0.88,0.97], backgroundColor:'rgba(255,215,0,0.7)',   borderRadius:3 },
+      { label:'Poor',        data:[0.308,0.400,0.684,0.800], backgroundColor:'rgba(231,76,60,0.7)',   borderRadius:3 },
+      { label:'Standard',    data:[0.317,0.582,0.675,0.837], backgroundColor:'rgba(52,152,219,0.7)',  borderRadius:3 },
+      { label:'Good',        data:[0.566,0.643,0.714,0.828], backgroundColor:'rgba(155,89,182,0.7)',  borderRadius:3 },
+      { label:'Exceptional', data:[0.700,0.792,0.786,0.929], backgroundColor:'rgba(255,215,0,0.75)',  borderRadius:3 },
     ]
   },
   options: {
@@ -726,9 +760,10 @@ new Chart(document.getElementById('alchemyChart'), {
   data: {
     labels: ['Apprentice', 'Journeyman', 'Adept', 'Grand Master'],
     datasets: [
-      { label:'No Stone',      data:[0.02,0.08,0.22,0.55], backgroundColor:'rgba(189,195,199,0.6)', borderRadius:3 },
-      { label:'Replica Stone', data:[0.17,0.23,0.37,0.70], backgroundColor:'rgba(52,152,219,0.6)',  borderRadius:3 },
-      { label:'Genuine Stone', data:[0.42,0.55,0.65,0.95], backgroundColor:'rgba(255,215,0,0.8)',   borderRadius:3 },
+      { label:'No Stone',  data:[0.032,0.174,0.143,0.593], backgroundColor:'rgba(231,76,60,0.75)',  borderRadius:3 },
+      { label:'Replica',   data:[0.000,0.000,0.600,0.667], backgroundColor:'rgba(189,195,199,0.7)', borderRadius:3 },
+      { label:'Partial',   data:[0.000,0.111,0.333,0.875], backgroundColor:'rgba(155,89,182,0.75)', borderRadius:3 },
+      { label:'Genuine',   data:[0.750,0.667,0.833,0.667], backgroundColor:'rgba(255,215,0,0.85)',  borderRadius:3 },
     ]
   },
   options: {
@@ -751,20 +786,20 @@ new Chart(document.getElementById('alchemyChart'), {
 // ── FINDINGS ──────────────────────────────────────────────────────────────────
 const FINDINGS = [
   { color:'gold',   num:'I',   title:'Lost Charms',
-    text:'Vowel count & terminal phoneme predict effectiveness. 28 lost charms worth reconstructing.',
-    note:'Flitwick would have a field day with this. He also must never know.' },
+    text:'Holdout R² is −0.244, worse than predicting the mean. Syllable count leads (0.338). Thirty lost charms score ≥70, and that is the model talking.',
+    note:'The curse-breaker can stay home. Flitwick can stay in the dark.' },
   { color:'blue',   num:'II',  title:'Herbology',
-    text:'4 natural clusters emerge. High potency correlates strongly with toxicity (r≈0.71).',
-    note:'Statistics is not always surprising.' },
+    text:'k=4 was chosen, then named by potency. Across 30 plants, potency and toxicity correlate at about −0.02.',
+    note:'Aconite and Belladonna are the toxic pair. The strongest cluster is the least poisonous.' },
   { color:'red',    num:'III', title:'Dark Arts',
-    text:'Statistical model flags 1995–97 rise ~6 months earlier than owl-post network.',
-    note:'I intend to show this to the Auror Office. I have not yet worked up the courage.' },
+    text:'Sixteen months sit above 2.5σ, every one of them in 1995–1998. The lantern looks backward over the whole archive. 2024 is a higher plateau, not a new alarm.',
+    note:'The six-month head start was never in the run. The counts were.' },
   { color:'purple', num:'IV',  title:'Potions',
-    text:'Brewer skill & ingredient quality drive 60% of predictive importance.',
-    note:'Snape was right about talent. I am choosing not to tell him.' },
+    text:'Temperature (0.269) and stir count (0.193) lead the splits. Skill and ingredient quality together are about 0.23. Holdout accuracy is 67%.',
+    note:'Masters still succeed 84.6% of the time, and students 45.9%. Both stories are true.' },
   { color:'green',  num:'V',   title:'Alchemy',
-    text:'Grand Masters without a Stone outperform Apprentices with one. Stone is a multiplier.',
-    note:'This will not be popular at the Alchemical Symposium.' },
+    text:'No stone is a real category: 201 attempts, 17.9% success. Grand Masters with none succeed 59.3% (n=27). Apprentices with a genuine stone succeed 75% (n=4). The model scores 82% by predicting every test row a failure.',
+    note:'Bring the sample sizes to the symposium. The apprentice cell is four attempts.' },
 ];
 
 const findingsDiv = document.getElementById('findings');
