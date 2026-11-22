@@ -33,7 +33,7 @@ Behind the wizarding-world framing, this is a portfolio of five analyses on synt
 | 2. Herbology Clustering | Do magical plants group by functional property? | K-Means (k chosen as 4), StandardScaler, elbow plot |
 | 3. Dark Arts Detection | Where do incident counts leave the usual range? | Monthly counts, z-score flags, province totals |
 | 4. Potions Optimization | Which brewing fields does a classifier split on? | Random Forest classification, group success rates |
-| 5. Alchemy Modeling | How much of "85% accuracy" is just predicting failure? | Logistic regression, stone and level rates |
+| 5. Alchemy Modeling | Once "None" is kept as a category, what does logistic regression catch? | Logistic regression, stone and level rates |
 
 The saved notebook kernel is Python 3.13. The CSVs sit in the repository root, which is where the notebook reads them.
 
@@ -146,31 +146,41 @@ Temperature's own correlation with success is about **0.08**. In the eight equal
 
 *The gold temperature bar is the bin with the highest rate in that chart, near 97–105°C. Brewer level and ingredient quality are the shorter gold bars, behind temperature, stir count, and potion type.*
 
-### 5. Alchemy — 85% accuracy, and two successes found
+### 5. Alchemy — 82% accuracy, and no successes found
 
-Logistic regression on a 60-row holdout:
+The word `None` in the alchemy log means no Philosopher's Stone. It is on **201 of 300** rows. The notebook now loads that file with `keep_default_na=False`, so pandas keeps `None` as a category. A default read treats that word as a missing value. The group-by then skips those rows, which is why an earlier run printed an empty "no stone" table.
+
+The logistic regression had still been given those rows, under a blank code that sorted last. This model treats the stone code as a single number, so naming the category `None` also moves that number (it now sits between Genuine and Partial). Refit on the corrected column, the same split prints:
 
 | Class | Precision | Recall | F1 | Support |
 |---|---:|---:|---:|---:|
-| Failure | 0.84 | 1.00 | 0.92 | 49 |
-| Success | 1.00 | 0.18 | 0.31 | 11 |
-| Accuracy | | | | **0.85** |
+| Failure | 0.82 | 1.00 | 0.90 | 49 |
+| Success | 0.00 | 0.00 | 0.00 | 11 |
+| Accuracy | | | | **0.82** |
 
-Recall of 0.18 on 11 successes is two successes found. Recall on failure is perfect. Always predicting failure would have scored 49/60, about **82%**, on this split. The headline accuracy sits just above that, because successes are uncommon in the test rows (and in the log: about 23% of 300 attempts succeed).
+Success recall is zero. None of the 11 successes in the holdout are predicted. Always predicting failure scores 49/60, which is this same **82%**. The earlier 85% score, and the two successes it caught, belonged to the run that stored the blank code at the end of the scale.
 
-The notebook's stone table, which drops missing labels, prints:
+The stone table now includes the missing category:
 
-| Stone, as printed | Success | Attempts |
+| Stone | Success | Attempts |
 |---|---:|---:|
 | Genuine | 75.0% | 16 |
+| None | 17.9% | 201 |
 | Partial | 24.1% | 54 |
 | Replica | 24.1% | 29 |
 
-The follow-up, "success by alchemist level, no stone," prints an empty series. The CSV contains the token `None` on **201 of 300** rows. Pandas reads the string `None` as a missing value, so those rows never entered the group-by, and the printed note about Grand Masters with no stone is sitting on top of an empty table.
+And the "no stone" table prints:
 
-Counted from the file, attempts marked `None` succeed about **18%**. Grand Masters with `None` succeed about **59%** (16 of 27). Apprentices with a genuine stone succeed **75%** (3 of 4). The file shows a small apprentice-and-genuine cell above the Grand Masters who have no stone, and that cell is four attempts. It will not carry a symposium.
+| Alchemist level | Success | Attempts |
+|---|---:|---:|
+| Apprentice | 3.2% | 63 |
+| Journeyman | 17.4% | 69 |
+| Adept | 14.3% | 42 |
+| Grand Master | 59.3% | 27 |
 
-What the larger counts do show is a skill gradient, and a genuine stone that is rare:
+Grand Masters with no stone succeed **59.3%** of the time (27 attempts). Apprentices with a genuine stone succeed **75.0%** (4 attempts). The apprentice cell is four tries. It sits above the Grand Masters who have no stone, and it will not carry a symposium.
+
+Across every stone, skill still climbs with rank:
 
 | Alchemist level | n | Success |
 |---|---:|---:|
@@ -179,7 +189,7 @@ What the larger counts do show is a skill gradient, and a genuine stone that is 
 | Adept | 65 | 27.7% |
 | Grand Master | 44 | 65.9% |
 
-A genuine stone coincides with a 75% success rate across 16 attempts of every rank. Partial and replica stones sit at 24%. Skill moves the rate. The stone, in the genuine rows, moves it too. The model, meanwhile, barely recognizes a success when it sees one.
+A genuine stone coincides with a 75% success rate across 16 attempts of every rank. Partial and replica stones sit near 24%. Skill moves the rate. The stone, in the genuine rows, moves it too. The refit model does not recognize a success at all.
 
 ---
 
@@ -213,7 +223,7 @@ The analysis lives at the repository root. There is no `data/` directory, and `g
 .
 ├── README.md
 ├── pembrook_magical_analytics.ipynb   # Main analysis, 18 cells, outputs saved
-├── pembrook_dashboard.html            # Companion dashboard (see note below)
+├── pembrook_dashboard.html            # Companion dashboard, same scores as this page
 ├── charm_manuscripts.csv              # 250 spell records (172 recovered, 78 lost)
 ├── herbology_properties.csv           # 30 plants
 ├── dark_arts_incidents.csv            # 2,777 incident reports, 1990–2024
@@ -223,10 +233,10 @@ The analysis lives at the repository root. There is no `data/` directory, and `g
 ├── chart_02_herbology.png
 ├── chart_03_dark_arts.png
 ├── chart_04_potions.png
-└── chart_05_alchemy.png
+└── chart_05_alchemy.png               # Stone chart, including None
 ```
 
-`pembrook_dashboard.html` is a styled view of the same project. Its summary cards still carry an earlier draft of the scores (a charm R² near 0.72, potions accuracy near 74%, and similar). The notebook outputs and this README are the record.
+`pembrook_dashboard.html` uses the same scores as this page and the notebook: charm R² of −0.244, potions accuracy of 67%, alchemy accuracy of 82%, the real annual incident counts, and a stone chart that keeps `None`.
 
 ---
 
